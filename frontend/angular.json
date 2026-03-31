@@ -42,7 +42,10 @@
               },
               "src/assets"
             ],
-            "styles": ["src/styles.css"]
+            "styles": [
+              "src/material-theme.scss",
+              "src/styles.css"
+            ]
           },
           "configurations": {
             "production": {
