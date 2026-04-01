@@ -20,8 +20,9 @@ export class Navbar {
 
   readonly links: NavLink[] = [
     { label: 'Inicio', route: '/', icon: 'home' },
-    { label: 'Funcionalidades', route: '/functionalities', icon: 'tune' },
+    { label: 'Funciones', route: '/functions', icon: 'tune' },
     { label: 'Seguridad', route: '/security', icon: 'shield' },
+    { label: 'Cómo funciona', route: '/how-it-works', icon: 'build' },
     { label: 'Sobre el proyecto', route: '/about', icon: 'info' },
     { label: 'Contacto', route: '/contact', icon: 'mail' },
   ];
