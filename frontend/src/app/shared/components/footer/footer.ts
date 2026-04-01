@@ -18,7 +18,7 @@ export class Footer {
       title: 'Plataforma',
       links: [
         { label: 'Inicio', route: '/' },
-        { label: 'Funcionalidades', route: '/functionalities' },
+        { label: 'Funciones', route: '/functions' },
         { label: 'Seguridad', route: '/security' },
         { label: 'Sobre el proyecto', route: '/about' },
       ],
