@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { Terms } from './pages/terms/terms';
 import { Privacy } from './pages/privacy/privacy';
+import { Cookies } from './pages/cookies/cookies';
 
 export const LEGAL_ROUTES: Routes = [
   {
@@ -13,5 +14,10 @@ export const LEGAL_ROUTES: Routes = [
     path: 'privacy',
     component: Privacy,
     title: 'Política de privacidad',
+  },
+  {
+    path: 'cookies',
+    component: Cookies,
+    title: 'Política de cookies',
   },
 ];
