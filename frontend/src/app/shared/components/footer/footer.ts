@@ -20,15 +20,14 @@ export class Footer {
         { label: 'Inicio', route: '/' },
         { label: 'Funciones', route: '/functions' },
         { label: 'Seguridad', route: '/security' },
-        { label: 'Sobre el proyecto', route: '/about' },
       ],
     },
     {
       title: 'Ayuda',
       links: [
-        { label: 'Contacto', route: '/contact' },
-        { label: 'Preguntas frecuentes', route: '/faq' },
         { label: 'Cómo funciona', route: '/how-it-works' },
+        { label: 'Sobre el proyecto', route: '/about' },
+        { label: 'Contacto', route: '/contact' },
       ],
     },
     {
