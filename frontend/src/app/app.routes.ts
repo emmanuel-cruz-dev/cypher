@@ -35,6 +35,10 @@ export const routes: Routes = [
         loadChildren: () =>
           import('./features/contact/contact.routes').then((m) => m.CONTACT_ROUTES),
       },
+      {
+        path: 'legal',
+        loadChildren: () => import('./features/legal/legal.routes').then((m) => m.LEGAL_ROUTES),
+      },
     ],
   },
 ];
