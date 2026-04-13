@@ -1,8 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
+
+import { ThemeService } from '../../../core/services/theme.service';
 
 interface NavLink {
   label: string;
@@ -16,6 +18,7 @@ interface NavLink {
   templateUrl: './navbar.html',
 })
 export class Navbar {
+  readonly themeService = inject(ThemeService);
   readonly drawerOpen = signal(false);
 
   readonly links: NavLink[] = [
