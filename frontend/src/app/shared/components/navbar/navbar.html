@@ -1,5 +1,5 @@
 <header
-  class="sticky top-0 z-50 flex h-16 items-center gap-2 border-b border-black/8 bg-white px-4 md:px-6"
+  class="sticky top-0 z-50 flex h-16 items-center gap-2 border-b border-black/8 bg-white dark:bg-black px-4 md:px-6"
 >
   <a routerLink="/" class="flex shrink-0 items-center gap-2.5 mr-4 text-inherit no-underline">
     <figure class="flex h-8 w-8 items-center justify-center shadow-lg rounded-full">
@@ -12,7 +12,9 @@
       />
     </figure>
 
-    <span class="text-[17px] font-medium tracking-tight text-gray-900">Cypher</span>
+    <span class="text-[17px] font-medium tracking-tight text-gray-900 dark:text-gray-300"
+      >Cypher</span
+    >
   </a>
 
   <nav class="hidden md:flex items-center gap-1" aria-label="Navegación principal">
@@ -21,7 +23,7 @@
       [routerLink]="link.route"
       routerLinkActive="!text-violet-700 !font-medium bg-violet-50"
       [routerLinkActiveOptions]="{ exact: link.route === '/' }"
-      class="relative rounded-lg px-3 py-1.5 text-sm font-normal text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900"
+      class="relative rounded-lg px-3 py-1.5 text-sm font-normal text-gray-500 dark:text-gray-300 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-900"
       matRipple
       [matRippleColor]="'rgba(0,0,0,0.04)'"
     >
@@ -42,6 +44,15 @@
     <mat-icon class="text-[16px]! w-4! h-4!">login</mat-icon>
     Acceder
   </a>
+
+  <button
+    mat-icon-button
+    (click)="themeService.toggleTheme()"
+    class="md:hidden text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors ml-2"
+    aria-label="Alternar tema"
+  >
+    <mat-icon>{{ themeService.isDarkTheme() ? 'dark_mode' : 'light_mode' }}</mat-icon>
+  </button>
 
   <button
     (click)="toggleDrawer()"
