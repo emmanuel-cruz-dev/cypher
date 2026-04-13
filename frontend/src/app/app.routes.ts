@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { MainLayout } from './layouts/main-layout/main-layout';
+import { EmptyLayout } from './layouts/empty-layout/empty-layout';
 
 export const routes: Routes = [
   {
@@ -44,5 +45,19 @@ export const routes: Routes = [
         loadChildren: () => import('./features/auth/auth.routes').then((m) => m.AUTH_ROUTES),
       },
     ],
+  },
+  {
+    path: 'error',
+    component: EmptyLayout,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./features/errors/errors.routes').then((m) => m.ERRORS_ROUTES),
+      },
+    ],
+  },
+  {
+    path: '**',
+    redirectTo: 'error/not-found',
   },
 ];
