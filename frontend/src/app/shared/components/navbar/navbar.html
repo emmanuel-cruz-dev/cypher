@@ -56,7 +56,7 @@
 
   <button
     (click)="toggleDrawer()"
-    class="flex md:hidden items-center justify-center w-9 h-9 rounded-lg text-gray-500 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+    class="flex md:hidden items-center justify-center w-9 h-9 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-900 dark:hover:text-gray-300 transition-colors cursor-pointer"
     aria-label="Abrir menú"
   >
     <mat-icon>{{ drawerOpen() ? 'close' : 'menu' }}</mat-icon>
@@ -70,7 +70,9 @@
   aria-hidden="true"
 ></div>
 
-<aside class="fixed inset-y-0 left-0 z-50 flex w-72 flex-col bg-white shadow-xl md:hidden">
+<aside
+  class="fixed inset-y-0 left-0 z-50 flex w-72 flex-col bg-white dark:bg-black shadow-xl md:hidden"
+>
   <div class="flex h-16 shrink-0 items-center gap-2.5 border-b border-black/8 px-4">
     <figure class="flex h-8 w-8 items-center justify-center shadow-lg rounded-full">
       <img
@@ -79,10 +81,12 @@
         class="w-full h-full object-cover"
       />
     </figure>
-    <span class="text-[17px] font-medium tracking-tight text-gray-900">Cypher</span>
+    <span class="text-[17px] font-medium tracking-tight text-gray-900 dark:text-gray-300"
+      >Cypher</span
+    >
     <button
       (click)="toggleDrawer()"
-      class="ml-auto flex items-center justify-center w-9 h-9 rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+      class="ml-auto flex items-center justify-center w-9 h-9 rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors cursor-pointer"
       aria-label="Cerrar menú"
     >
       <mat-icon>close</mat-icon>

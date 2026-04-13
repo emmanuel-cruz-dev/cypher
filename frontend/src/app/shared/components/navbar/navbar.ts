@@ -4,7 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 
-import { ThemeService } from '../../../core/services/theme.service';
+import { ThemeService } from '../../../core';
 
 interface NavLink {
   label: string;
