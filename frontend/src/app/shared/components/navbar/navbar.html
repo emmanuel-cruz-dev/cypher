@@ -17,7 +17,7 @@
     >
   </a>
 
-  <nav class="hidden md:flex items-center gap-1" aria-label="Navegación principal">
+  <nav class="hidden md:flex items-center gap-1" [attr.aria-label]="'aria.mainNav' | translate">
     @for (link of links; track link.route) {
     <a
       [routerLink]="link.route"
@@ -27,7 +27,7 @@
       matRipple
       [matRippleColor]="'rgba(0,0,0,0.04)'"
     >
-      {{ link.label }}
+      {{ link.label | translate }}
     </a>
     }
   </nav>
@@ -39,17 +39,31 @@
     class="hidden md:inline-flex items-center gap-1.5 rounded-lg bg-violet-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-violet-800"
     matRipple
     [matRippleColor]="'rgba(255,255,255,0.12)'"
-    aria-label="Acceder a tu cuenta"
+    [attr.aria-label]="'aria.login' | translate"
   >
     <mat-icon class="text-[16px]! w-4! h-4!">login</mat-icon>
-    Acceder
+    {{ 'nav.login' | translate }}
   </a>
 
   <button
     mat-icon-button
+    (click)="langService.toggleLanguage()"
+    class="flex items-center justify-center text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+    [attr.aria-label]="'aria.toggleLang' | translate"
+    [title]="'aria.toggleLang' | translate"
+  >
+    <span
+      class="flex h-full w-full items-center justify-center text-xs font-semibold tracking-wide leading-none"
+    >
+      {{ langService.currentLang() === 'es' ? 'EN' : 'ES' }}
+    </span>
+  </button>
+
+  <button
+    mat-icon-button
     (click)="themeService.toggleTheme()"
-    class="md:hidden text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors ml-2"
-    aria-label="Alternar tema"
+    class="inline-flex text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+    [attr.aria-label]="'aria.toggleTheme' | translate"
   >
     <mat-icon>{{ themeService.isDarkTheme() ? 'dark_mode' : 'light_mode' }}</mat-icon>
   </button>
@@ -57,7 +71,7 @@
   <button
     (click)="toggleDrawer()"
     class="flex md:hidden items-center justify-center w-9 h-9 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-900 dark:hover:text-gray-300 transition-colors cursor-pointer"
-    aria-label="Abrir menú"
+    [attr.aria-label]="'aria.openMenu' | translate"
   >
     <mat-icon>{{ drawerOpen() ? 'close' : 'menu' }}</mat-icon>
   </button>
@@ -87,13 +101,16 @@
     <button
       (click)="toggleDrawer()"
       class="ml-auto flex items-center justify-center w-9 h-9 rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors cursor-pointer"
-      aria-label="Cerrar menú"
+      [attr.aria-label]="'aria.closeMenu' | translate"
     >
       <mat-icon>close</mat-icon>
     </button>
   </div>
 
-  <nav class="flex flex-col gap-1 overflow-y-auto p-3" aria-label="Menú mobile">
+  <nav
+    class="flex flex-col gap-1 overflow-y-auto p-3"
+    [attr.aria-label]="'aria.mobileMenu' | translate"
+  >
     @for (link of links; track link.route) {
     <a
       [routerLink]="link.route"
@@ -106,7 +123,7 @@
       <mat-icon fontSet="material-icons-outlined" class="text-[20px]! w-5! h-5! shrink-0">{{
         link.icon
       }}</mat-icon>
-      {{ link.label }}
+      {{ link.label | translate }}
     </a>
     }
   </nav>
@@ -120,7 +137,7 @@
       [matRippleColor]="'rgba(255,255,255,0.12)'"
     >
       <mat-icon class="text-[18px]! w-4.5! h-4.5!">login</mat-icon>
-      Acceder
+      {{ 'nav.login' | translate }}
     </a>
   </div>
 </aside>
