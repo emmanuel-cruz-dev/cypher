@@ -17,8 +17,7 @@
         </a>
 
         <p class="max-w-88 text-sm leading-relaxed text-gray-400">
-          Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales,
-          notas y datos, cifrados de extremo a extremo.
+          {{ 'footer.description' | translate }}
         </p>
 
         <ul class="flex gap-4">
@@ -75,10 +74,10 @@
         </ul>
       </div>
 
-      @for (col of columns; track col.title) {
+      @for (col of columns; track col.titleKey) {
       <div class="flex flex-col gap-3">
         <p class="text-[11px] font-semibold uppercase tracking-widest text-gray-500">
-          {{ col.title }}
+          {{ col.titleKey | translate }}
         </p>
         <ul class="flex flex-col gap-2">
           @for (link of col.links; track link.route) {
@@ -87,7 +86,7 @@
               [routerLink]="link.route"
               class="text-sm text-gray-400 transition-colors hover:text-gray-100 no-underline"
             >
-              {{ link.label }}
+              {{ link.labelKey | translate }}
             </a>
           </li>
           }
@@ -100,14 +99,13 @@
 
     <div class="flex justify-center">
       <p class="text-sm text-gray-400">
-        Copyright © 2026 Cypher · Desarrollado por
+        {{ 'footer.copyright' | translate }}
         <a
           href="https://emmanuel-cruz.netlify.app/"
           title="Emmanuel Cruz Portfolio"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Emmanuel Cruz</a
+          >Emmanuel Cruz</a
         >.
       </p>
     </div>
