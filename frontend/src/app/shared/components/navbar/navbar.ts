@@ -3,8 +3,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
-import { ThemeService } from '../../../core';
+import { ThemeService, LanguageService } from '../../../core';
 
 interface NavLink {
   label: string;
@@ -14,20 +15,28 @@ interface NavLink {
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink, RouterLinkActive, MatIconModule, MatButtonModule, MatRippleModule],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    MatIconModule,
+    MatButtonModule,
+    MatRippleModule,
+    TranslatePipe,
+  ],
   templateUrl: './navbar.html',
 })
 export class Navbar {
   readonly themeService = inject(ThemeService);
+  readonly langService = inject(LanguageService);
   readonly drawerOpen = signal(false);
 
   readonly links: NavLink[] = [
-    { label: 'Inicio', route: '/', icon: 'home' },
-    { label: 'Funciones', route: '/functions', icon: 'tune' },
-    { label: 'Seguridad', route: '/security', icon: 'shield' },
-    { label: 'Cómo funciona', route: '/how-it-works', icon: 'build' },
-    { label: 'Sobre el proyecto', route: '/about', icon: 'info' },
-    { label: 'Contacto', route: '/contact', icon: 'mail' },
+    { label: 'nav.home', route: '/', icon: 'home' },
+    { label: 'nav.functions', route: '/functions', icon: 'tune' },
+    { label: 'nav.security', route: '/security', icon: 'shield' },
+    { label: 'nav.howItWorks', route: '/how-it-works', icon: 'build' },
+    { label: 'nav.about', route: '/about', icon: 'info' },
+    { label: 'nav.contact', route: '/contact', icon: 'mail' },
   ];
 
   toggleDrawer() {
