@@ -40,5 +40,14 @@
         "cookies": "Cookie policy"
       }
     }
+  },
+  "hero": {
+    "tagline": "The most reliable password manager",
+    "title": "The most trusted",
+    "titleHighlight": "password manager",
+    "description": "Cypher is the best free password manager to securely store, manage and share sensitive data online such as passwords, passkeys and credit cards.",
+    "ctaPrimary": "Start today",
+    "ctaSecondary": "Contact us",
+    "disclaimer": "* It's free and requires no installation."
   }
 }
