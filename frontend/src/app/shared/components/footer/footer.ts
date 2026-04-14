@@ -1,41 +1,46 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { TranslatePipe } from '@ngx-translate/core';
+
+import { LanguageService } from '../../../core';
 
 interface FooterColumn {
-  title: string;
-  links: { label: string; route: string }[];
+  titleKey: string;
+  links: { labelKey: string; route: string }[];
 }
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink, MatIconModule],
+  imports: [RouterLink, MatIconModule, TranslatePipe],
   templateUrl: './footer.html',
 })
 export class Footer {
+  readonly langService = inject(LanguageService);
+
   readonly columns: FooterColumn[] = [
     {
-      title: 'Plataforma',
+      titleKey: 'footer.columns.platform.title',
       links: [
-        { label: 'Inicio', route: '/' },
-        { label: 'Funciones', route: '/functions' },
-        { label: 'Seguridad', route: '/security' },
+        { labelKey: 'footer.columns.platform.home', route: '/' },
+        { labelKey: 'footer.columns.platform.functions', route: '/functions' },
+        { labelKey: 'footer.columns.platform.security', route: '/security' },
       ],
     },
     {
-      title: 'Ayuda',
+      titleKey: 'footer.columns.help.title',
       links: [
-        { label: 'Cómo funciona', route: '/how-it-works' },
-        { label: 'Sobre el proyecto', route: '/about' },
-        { label: 'Contacto', route: '/contact' },
+        { labelKey: 'footer.columns.help.howItWorks', route: '/how-it-works' },
+        { labelKey: 'footer.columns.help.about', route: '/about' },
+        { labelKey: 'footer.columns.help.contact', route: '/contact' },
       ],
     },
     {
-      title: 'Legal',
+      titleKey: 'footer.columns.legal.title',
       links: [
-        { label: 'Términos de uso', route: '/legal/terms' },
-        { label: 'Política de privacidad', route: '/legal/privacy' },
-        { label: 'Política de cookies', route: '/legal/cookies' },
+        { labelKey: 'footer.columns.legal.terms', route: '/legal/terms' },
+        { labelKey: 'footer.columns.legal.privacy', route: '/legal/privacy' },
+        { labelKey: 'footer.columns.legal.cookies', route: '/legal/cookies' },
       ],
     },
   ];
