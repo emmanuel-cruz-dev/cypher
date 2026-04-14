@@ -16,5 +16,29 @@
     "toggleTheme": "Toggle theme",
     "toggleLang": "Switch language",
     "login": "Access your account"
+  },
+  "footer": {
+    "description": "Comprehensive digital asset management and personal security system. Your credentials, notes and data, end-to-end encrypted.",
+    "copyright": "Copyright © 2026 Cypher · Developed by",
+    "columns": {
+      "platform": {
+        "title": "Platform",
+        "home": "Home",
+        "functions": "Features",
+        "security": "Security"
+      },
+      "help": {
+        "title": "Help",
+        "howItWorks": "How it works",
+        "about": "About",
+        "contact": "Contact"
+      },
+      "legal": {
+        "title": "Legal",
+        "terms": "Terms of use",
+        "privacy": "Privacy policy",
+        "cookies": "Cookie policy"
+      }
+    }
   }
 }
