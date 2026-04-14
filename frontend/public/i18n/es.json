@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "functions": "Funciones",
+    "security": "Seguridad",
+    "howItWorks": "Cómo funciona",
+    "about": "Sobre el proyecto",
+    "contact": "Contacto",
+    "login": "Acceder"
+  },
+  "aria": {
+    "mainNav": "Navegación principal",
+    "mobileMenu": "Menú mobile",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "toggleTheme": "Alternar tema",
+    "toggleLang": "Cambiar idioma",
+    "login": "Acceder a tu cuenta"
+  }
+}
