@@ -16,5 +16,29 @@
     "toggleTheme": "Alternar tema",
     "toggleLang": "Cambiar idioma",
     "login": "Acceder a tu cuenta"
+  },
+  "footer": {
+    "description": "Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales, notas y datos, cifrados de extremo a extremo.",
+    "copyright": "Copyright © 2026 Cypher · Desarrollado por",
+    "columns": {
+      "platform": {
+        "title": "Plataforma",
+        "home": "Inicio",
+        "functions": "Funciones",
+        "security": "Seguridad"
+      },
+      "help": {
+        "title": "Ayuda",
+        "howItWorks": "Cómo funciona",
+        "about": "Sobre el proyecto",
+        "contact": "Contacto"
+      },
+      "legal": {
+        "title": "Legal",
+        "terms": "Términos de uso",
+        "privacy": "Política de privacidad",
+        "cookies": "Política de cookies"
+      }
+    }
   }
 }
