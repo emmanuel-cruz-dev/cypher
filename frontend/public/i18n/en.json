@@ -17,6 +17,36 @@
       "login": "Access your account"
     }
   },
+  "hero": {
+    "tagline": "The most reliable password manager",
+    "title": "The most trusted",
+    "titleHighlight": "password manager",
+    "description": "Cypher is the best free password manager to securely store, manage and share sensitive data online such as passwords, passkeys and credit cards.",
+    "ctaPrimary": "Start today",
+    "ctaSecondary": "Contact us",
+    "disclaimer": "* It's free and requires no installation."
+  },
+  "features": {
+    "tagline": "Simplify your digital security",
+    "title": "Manage your passwords easily,",
+    "titleHighlight": "without complications or risks",
+    "automation": {
+      "title": "Discover the power of automation",
+      "description": "Automatically create, save, and autofill passwords, so you can focus on what really matters."
+    },
+    "sharing": {
+      "title": "Easier sharing",
+      "description": "Share passwords with coworkers or family with just one click. Collaborating or granting access has never been easier."
+    },
+    "strong": {
+      "title": "Avoid weak passwords",
+      "description": "Our manager generates secure passwords for all your accounts and saves them so you don't have to memorize them."
+    },
+    "access": {
+      "title": "Access from anywhere",
+      "description": "Check your passwords from anywhere and on any device to log into your accounts whenever you need to."
+    }
+  },
   "footer": {
     "description": "Comprehensive digital asset management and personal security system. Your credentials, notes and data, end-to-end encrypted.",
     "copyright": "Copyright © 2026 Cypher · Developed by",
@@ -40,14 +70,5 @@
         "cookies": "Cookie policy"
       }
     }
-  },
-  "hero": {
-    "tagline": "The most reliable password manager",
-    "title": "The most trusted",
-    "titleHighlight": "password manager",
-    "description": "Cypher is the best free password manager to securely store, manage and share sensitive data online such as passwords, passkeys and credit cards.",
-    "ctaPrimary": "Start today",
-    "ctaSecondary": "Contact us",
-    "disclaimer": "* It's free and requires no installation."
   }
 }

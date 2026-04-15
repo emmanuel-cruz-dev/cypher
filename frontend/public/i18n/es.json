@@ -17,6 +17,36 @@
       "login": "Acceder a tu cuenta"
     }
   },
+  "hero": {
+    "tagline": "El gestor de contraseñas más fiable",
+    "title": "El administrador de",
+    "titleHighlight": "contraseñas más confiable",
+    "description": "Cypher es el mejor gestor de contraseñas gratuito para almacenar, administrar y compartir de forma segura datos confidenciales en línea, como contraseñas, claves de acceso y tarjetas de crédito.",
+    "ctaPrimary": "Empieza hoy",
+    "ctaSecondary": "Contáctanos",
+    "disclaimer": "* Es gratis y no requiere ningún tipo de instalación."
+  },
+  "features": {
+    "tagline": "Simplifica tu seguridad digital",
+    "title": "Gestiona tus contraseñas fácilmente,",
+    "titleHighlight": "sin complicaciones ni riesgos",
+    "automation": {
+      "title": "Descubra el poder de la automatización",
+      "description": "Cree, guarde y rellene las contraseñas automáticamente, y dedique su atención a lo que realmente importa."
+    },
+    "sharing": {
+      "title": "Comparta más fácilmente",
+      "description": "Con un clic puede compartir contraseñas con compañeros de trabajo o familiares. Nunca había sido tan fácil colaborar o dar acceso."
+    },
+    "strong": {
+      "title": "Evite contraseñas débiles",
+      "description": "Nuestro gestor genera contraseñas seguras para todas sus cuentas y las guarda para que no tenga que memorizarlas."
+    },
+    "access": {
+      "title": "Accede desde cualquier lugar",
+      "description": "Consulte sus contraseñas desde cualquier sitio y en cualquier dispositivo para entrar en sus cuentas siempre que lo necesite."
+    }
+  },
   "footer": {
     "description": "Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales, notas y datos, cifrados de extremo a extremo.",
     "copyright": "Copyright © 2026 Cypher · Desarrollado por",
@@ -40,14 +70,5 @@
         "cookies": "Política de cookies"
       }
     }
-  },
-  "hero": {
-    "tagline": "El gestor de contraseñas más fiable",
-    "title": "El administrador de",
-    "titleHighlight": "contraseñas más confiable",
-    "description": "Cypher es el mejor gestor de contraseñas gratuito para almacenar, administrar y compartir de forma segura datos confidenciales en línea, como contraseñas, claves de acceso y tarjetas de crédito.",
-    "ctaPrimary": "Empieza hoy",
-    "ctaSecondary": "Contáctanos",
-    "disclaimer": "* Es gratis y no requiere ningún tipo de instalación."
   }
 }
