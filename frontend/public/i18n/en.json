@@ -6,16 +6,16 @@
     "howItWorks": "How it works",
     "about": "About",
     "contact": "Contact",
-    "login": "Sign in"
-  },
-  "aria": {
-    "mainNav": "Main navigation",
-    "mobileMenu": "Mobile menu",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "toggleTheme": "Toggle theme",
-    "toggleLang": "Switch language",
-    "login": "Access your account"
+    "login": "Sign in",
+    "aria": {
+      "mainNav": "Main navigation",
+      "mobileMenu": "Mobile menu",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "toggleTheme": "Toggle theme",
+      "toggleLang": "Switch language",
+      "login": "Access your account"
+    }
   },
   "footer": {
     "description": "Comprehensive digital asset management and personal security system. Your credentials, notes and data, end-to-end encrypted.",

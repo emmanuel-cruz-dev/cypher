@@ -6,16 +6,16 @@
     "howItWorks": "Cómo funciona",
     "about": "Sobre el proyecto",
     "contact": "Contacto",
-    "login": "Acceder"
-  },
-  "aria": {
-    "mainNav": "Navegación principal",
-    "mobileMenu": "Menú mobile",
-    "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú",
-    "toggleTheme": "Alternar tema",
-    "toggleLang": "Cambiar idioma",
-    "login": "Acceder a tu cuenta"
+    "login": "Acceder",
+    "aria": {
+      "mainNav": "Navegación principal",
+      "mobileMenu": "Menú mobile",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "toggleTheme": "Alternar tema",
+      "toggleLang": "Cambiar idioma",
+      "login": "Acceder a tu cuenta"
+    }
   },
   "footer": {
     "description": "Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales, notas y datos, cifrados de extremo a extremo.",
