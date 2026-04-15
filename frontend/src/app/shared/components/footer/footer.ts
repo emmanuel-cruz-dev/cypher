@@ -1,9 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { TranslatePipe } from '@ngx-translate/core';
-
-import { LanguageService } from '../../../core';
 
 interface FooterColumn {
   titleKey: string;
@@ -16,8 +14,6 @@ interface FooterColumn {
   templateUrl: './footer.html',
 })
 export class Footer {
-  readonly langService = inject(LanguageService);
-
   readonly columns: FooterColumn[] = [
     {
       titleKey: 'footer.columns.platform.title',
