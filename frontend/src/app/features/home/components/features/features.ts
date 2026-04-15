@@ -2,19 +2,15 @@ import { Component } from '@angular/core';
 import { NgmMotionDirective } from '@scripttype/ng-motion';
 import { TranslatePipe } from '@ngx-translate/core';
 
-interface Feature {
-  key: string;
-  image: string;
-  delay: number;
-}
+import { FeaturesCard } from '../features-card/features-card';
 
 @Component({
   selector: 'app-features',
-  imports: [NgmMotionDirective, TranslatePipe],
+  imports: [NgmMotionDirective, TranslatePipe, FeaturesCard],
   templateUrl: './features.html',
 })
 export class Features {
-  features: Feature[] = [
+  features = [
     {
       key: 'automation',
       image: 'src/assets/images/home/feature-automation.png',
