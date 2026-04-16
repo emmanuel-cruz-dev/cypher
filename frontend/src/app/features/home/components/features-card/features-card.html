@@ -6,13 +6,11 @@
   [transition]="{ duration: 0.6, delay: feature.delay }"
   class="group flex flex-col gap-5"
 >
-  <figure
-    class="relative flex items-center justify-start h-24 transition-transform duration-300 group-hover:-translate-y-1"
-  >
+  <figure class="h-36 mx-auto transition-transform duration-300 group-hover:-translate-y-1 mb-2">
     <img
       [src]="feature.image"
       [alt]="'features.' + feature.key + '.title' | translate"
-      class="h-full w-auto object-contain drop-shadow-md"
+      class="h-full w-auto object-cover drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
       loading="lazy"
     />
   </figure>
@@ -26,5 +24,5 @@
     </p>
   </div>
 
-  <div class="h-px w-8 bg-[#a8d8f0] transition-all duration-300 group-hover:w-20"></div>
+  <div class="h-0.5 w-8 bg-[#a8d8f0] transition-all duration-300 group-hover:w-20"></div>
 </article>
