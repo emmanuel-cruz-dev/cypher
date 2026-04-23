@@ -35,8 +35,6 @@ export class Navbar {
     { label: 'nav.functions', route: '/functions', icon: 'tune' },
     { label: 'nav.security', route: '/security', icon: 'shield' },
     { label: 'nav.howItWorks', route: '/how-it-works', icon: 'build' },
-    { label: 'nav.about', route: '/about', icon: 'info' },
-    { label: 'nav.contact', route: '/contact', icon: 'mail' },
   ];
 
   toggleDrawer() {
