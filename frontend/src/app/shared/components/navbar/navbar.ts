@@ -3,6 +3,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslatePipe } from '@ngx-translate/core';
 
 import { ThemeService, LanguageService } from '../../../core';
@@ -21,6 +22,7 @@ interface NavLink {
     MatIconModule,
     MatButtonModule,
     MatRippleModule,
+    MatTooltipModule,
     TranslatePipe,
   ],
   templateUrl: './navbar.html',
