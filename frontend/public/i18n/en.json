@@ -45,6 +45,18 @@
       "description": "Check your passwords from anywhere and on any device to log into your accounts whenever you need to."
     }
   },
+  "whoWeAre": {
+    "tagline": "Who we are",
+    "title": "Protecting",
+    "titleHighlight": "your digital security",
+    "titleEnd": "with dedication, technology and trust",
+    "description": "We are a committed team of cybersecurity experts, offering innovative solutions to protect valuable information. Our mission is to ensure digital user and company tranquility with advanced technology and efficiency.",
+    "stats": {
+      "positiveReviews": "Positive reviews",
+      "protectedUsers": "Protected users",
+      "affiliatedCompanies": "Affiliated companies"
+    }
+  },
   "footer": {
     "description": "Comprehensive digital asset management and personal security system. Your credentials, notes and data, end-to-end encrypted.",
     "copyright": "Copyright © 2026 Cypher · Developed by",

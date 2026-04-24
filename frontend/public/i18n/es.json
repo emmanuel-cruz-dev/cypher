@@ -45,6 +45,18 @@
       "description": "Consulte sus contraseñas desde cualquier sitio y en cualquier dispositivo para entrar en sus cuentas siempre que lo necesite."
     }
   },
+  "whoWeAre": {
+    "tagline": "Quiénes somos",
+    "title": "Protegiendo",
+    "titleHighlight": "tu seguridad digital",
+    "titleEnd": "con dedicación, tecnología y confianza",
+    "description": "Somos un equipo comprometido con la ciberseguridad, ofreciendo soluciones innovadoras para proteger información valiosa. Nuestra misión es garantizar la tranquilidad digital de usuarios y empresas con tecnología avanzada y eficiente.",
+    "stats": {
+      "positiveReviews": "Reseñas positivas",
+      "protectedUsers": "Usuarios protegidos",
+      "affiliatedCompanies": "Empresas afiliadas"
+    }
+  },
   "footer": {
     "description": "Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales, notas y datos, cifrados de extremo a extremo.",
     "copyright": "Copyright © 2026 Cypher · Desarrollado por",
