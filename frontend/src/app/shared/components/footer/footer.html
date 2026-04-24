@@ -21,56 +21,19 @@
         </p>
 
         <ul class="flex gap-4">
+          @for (social of socials; track social.route) {
           <li>
             <a
-              href="https://www.facebook.com/"
-              class="text-gray-500 hover:text-blue-600 transition-colors"
+              [href]="social.route"
+              matTooltip="{{ social.labelKey | translate }}"
+              class="text-gray-500 hover:text-{{ social.color }} transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <mat-icon svgIcon="facebook" class="w-5! h-5!"></mat-icon>
+              <mat-icon svgIcon="{{ social.icon }}" class="w-5! h-5!"></mat-icon>
             </a>
           </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              class="text-gray-500 hover:text-pink-600 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <mat-icon svgIcon="instagram" class="w-5! h-5!"></mat-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.tiktok.com/"
-              class="text-gray-500 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <mat-icon svgIcon="tiktok" class="w-5! h-5!"></mat-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.x.com/"
-              class="text-gray-500 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <mat-icon svgIcon="x" class="w-5! h-5!"></mat-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              class="text-gray-500 hover:text-[#FF0000] transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <mat-icon svgIcon="youtube" class="w-5! h-5!"></mat-icon>
-            </a>
-          </li>
+          }
         </ul>
       </div>
 
