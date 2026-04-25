@@ -1,7 +1,7 @@
 <section class="relative dark:bg-[#0d1117] py-20 px-6 overflow-hidden">
   <div class="absolute inset-0 pointer-events-none">
     <svg
-      class="w-full h-full opacity-5 text-black dark:text-white"
+      class="w-full h-full opacity-10 text-black dark:text-white"
       xmlns="http://www.w3.org/2000/svg"
     >
       <line x1="100%" y1="10%" x2="70%" y2="100%" class="stroke-current" stroke-width="0.5" />
@@ -49,6 +49,7 @@
         </p>
 
         <div
+          #statsSection
           ngmMotion
           [initial]="{ opacity: 0, y: 16 }"
           [whileInView]="{ opacity: 1, y: 0 }"
@@ -59,7 +60,7 @@
           @for (stat of stats; track stat.key) {
           <div class="flex flex-col gap-1">
             <span class="text-3xl font-bold text-[#8b5cf6]">
-              {{ stat.value }}
+              {{ stat.displayed }}{{ stat.suffix }}
             </span>
             <span class="text-sm text-gray-500 dark:text-gray-400">
               {{ 'whoWeAre.stats.' + stat.key | translate }}
@@ -80,7 +81,7 @@
         <img
           src="assets/images/home/who-we-are.avif"
           alt="Ilustración de seguridad digital"
-          class="w-full h-full max-w-sm lg:max-w-md object-cover drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_20px_40px_rgba(139,92,246,0.15)]"
+          class="w-full h-full max-w-sm lg:max-w-md object-cover drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
           width="564"
           height="631"
           loading="lazy"
