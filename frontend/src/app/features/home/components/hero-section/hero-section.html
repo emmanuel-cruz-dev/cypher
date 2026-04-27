@@ -19,7 +19,7 @@
       [transition]="{ duration: 0.8 }"
       class="text-sm font-semibold tracking-[0.2em] text-gray-400 uppercase mb-4"
     >
-      {{ 'hero.tagline' | translate }}
+      {{ 'home.hero.tagline' | translate }}
     </p>
 
     <h1
@@ -30,8 +30,8 @@
       [transition]="{ duration: 0.5, delay: 0.4 }"
       class="text-5xl md:text-6xl font-bold leading-tight mb-6"
     >
-      {{ 'hero.title' | translate }}<br />
-      <span class="text-violet-500">{{ 'hero.titleHighlight' | translate }}</span>
+      {{ 'home.hero.title' | translate }}<br />
+      <span class="text-violet-500">{{ 'home.hero.titleHighlight' | translate }}</span>
     </h1>
 
     <p
@@ -42,7 +42,7 @@
       [transition]="{ duration: 0.8, delay: 0.2 }"
       class="text-gray-500 dark:text-gray-400 text-base md:text-lg max-w-4xl mx-auto mb-10 leading-relaxed"
     >
-      {{ 'hero.description' | translate }}
+      {{ 'home.hero.description' | translate }}
     </p>
 
     <footer
@@ -59,17 +59,17 @@
           routerLink="/auth/login"
           class="px-8 py-3 bg-black text-white dark:bg-white dark:text-[#0d1117] dark:border-white/10 font-semibold rounded-full hover:bg-black/80 dark:hover:bg-white/90 transition-colors duration-300"
         >
-          {{ 'hero.ctaPrimary' | translate }}
+          {{ 'home.hero.ctaPrimary' | translate }}
         </a>
         <a
           routerLink="/contact"
           class="px-8 py-3 border border-black dark:border-white font-semibold rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition-colors duration-300"
         >
-          {{ 'hero.ctaSecondary' | translate }}
+          {{ 'home.hero.ctaSecondary' | translate }}
         </a>
       </div>
       <small class="text-gray-500 dark:text-gray-400 text-xs">
-        {{ 'hero.disclaimer' | translate }}
+        {{ 'home.hero.disclaimer' | translate }}
       </small>
     </footer>
   </div>

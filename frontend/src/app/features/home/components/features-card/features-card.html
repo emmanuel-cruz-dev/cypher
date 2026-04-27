@@ -9,7 +9,7 @@
   <figure class="h-36 mx-auto transition-transform duration-300 group-hover:-translate-y-1 mb-2">
     <img
       [src]="feature.image"
-      [alt]="'features.' + feature.key + '.title' | translate"
+      [alt]="'home.features.' + feature.key + '.title' | translate"
       class="h-full w-auto object-cover drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
       loading="lazy"
     />
@@ -17,10 +17,10 @@
 
   <div class="flex flex-col gap-2">
     <h3 class="text-xl font-bold leading-snug">
-      {{ 'features.' + feature.key + '.title' | translate }}
+      {{ 'home.features.' + feature.key + '.title' | translate }}
     </h3>
     <p class="text-base max-w-5/6 lg:max-w-none text-gray-500 dark:text-gray-400 leading-relaxed">
-      {{ 'features.' + feature.key + '.description' | translate }}
+      {{ 'home.features.' + feature.key + '.description' | translate }}
     </p>
   </div>
 
