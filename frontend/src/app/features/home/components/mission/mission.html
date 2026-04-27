@@ -67,34 +67,14 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
           @for (feature of features; track feature.key; let i = $index) {
-          <div
+          <app-mission-item
+            [feature]="feature"
             ngmMotion
             [initial]="{ opacity: 0, y: 20 }"
             [whileInView]="{ opacity: 1, y: 0 }"
             [viewport]="{ once: true }"
             [transition]="{ duration: 0.5, delay: 0.2 + i * 0.1 }"
-            class="flex items-start gap-4 group"
-          >
-            <figure class="shrink-0 w-12 h-auto">
-              <img
-                src="assets/images/home/mission-shield.avif"
-                alt="Ilustración de defensa digital"
-                class="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
-                width="51"
-                height="59"
-                loading="lazy"
-              />
-            </figure>
-
-            <div class="flex flex-col gap-1">
-              <h3 class="text-base font-semibold text-gray-900 dark:text-white">
-                {{ 'home.ourMission.features.' + feature.key + '.title' | translate }}
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                {{ 'home.ourMission.features.' + feature.key + '.description' | translate }}
-              </p>
-            </div>
-          </div>
+          />
           }
         </div>
       </div>
