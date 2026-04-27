@@ -1,83 +1,87 @@
 {
-  "nav": {
-    "home": "Inicio",
-    "functions": "Funciones",
-    "security": "Seguridad",
-    "howItWorks": "Cómo funciona",
-    "login": "Acceder",
-    "aria": {
-      "mainNav": "Navegación principal",
-      "mobileMenu": "Menú mobile",
-      "openMenu": "Abrir menú",
-      "closeMenu": "Cerrar menú",
-      "toggleTheme": "Cambiar tema",
-      "toggleLang": "Cambiar idioma",
-      "login": "Acceder a tu cuenta"
-    }
-  },
-  "hero": {
-    "tagline": "El gestor de contraseñas más fiable",
-    "title": "El administrador de",
-    "titleHighlight": "contraseñas más confiable",
-    "description": "Cypher es el mejor gestor de contraseñas gratuito para almacenar, administrar y compartir de forma segura datos confidenciales en línea, como contraseñas, claves de acceso y tarjetas de crédito.",
-    "ctaPrimary": "Empieza hoy",
-    "ctaSecondary": "Contáctanos",
-    "disclaimer": "* Es gratis y no requiere ningún tipo de instalación."
-  },
-  "features": {
-    "tagline": "Simplifica tu seguridad digital",
-    "title": "Gestiona tus contraseñas fácilmente,",
-    "titleHighlight": "sin complicaciones ni riesgos",
-    "automation": {
-      "title": "Descubra el poder de la automatización",
-      "description": "Cree, guarde y rellene las contraseñas automáticamente, y dedique su atención a lo que realmente importa."
+  "home": {
+    "hero": {
+      "tagline": "El gestor de contraseñas más fiable",
+      "title": "El administrador de",
+      "titleHighlight": "contraseñas más confiable",
+      "description": "Cypher es el mejor gestor de contraseñas gratuito para almacenar, administrar y compartir de forma segura datos confidenciales en línea, como contraseñas, claves de acceso y tarjetas de crédito.",
+      "ctaPrimary": "Empieza hoy",
+      "ctaSecondary": "Contáctanos",
+      "disclaimer": "* Es gratis y no requiere ningún tipo de instalación."
     },
-    "sharing": {
-      "title": "Comparta más fácilmente",
-      "description": "Con un clic puede compartir contraseñas con compañeros de trabajo o familiares. Nunca había sido tan fácil colaborar o dar acceso."
-    },
-    "strong": {
-      "title": "Evite contraseñas débiles",
-      "description": "Nuestro gestor genera contraseñas seguras para todas sus cuentas y las guarda para que no tenga que memorizarlas."
-    },
-    "access": {
-      "title": "Accede desde cualquier lugar",
-      "description": "Consulte sus contraseñas desde cualquier sitio y en cualquier dispositivo para entrar en sus cuentas siempre que lo necesite."
-    }
-  },
-  "whoWeAre": {
-    "tagline": "Quiénes somos",
-    "title": "Protegiendo",
-    "titleHighlight": "tu seguridad digital",
-    "titleEnd": "con dedicación, tecnología y confianza",
-    "description": "Somos un equipo comprometido con la ciberseguridad, ofreciendo soluciones innovadoras para proteger información valiosa. Nuestra misión es garantizar la tranquilidad digital de usuarios y empresas con tecnología avanzada y eficiente.",
-    "stats": {
-      "positiveReviews": "Reseñas positivas",
-      "protectedUsers": "Usuarios protegidos",
-      "affiliatedCompanies": "Empresas afiliadas"
-    }
-  },
-  "footer": {
-    "description": "Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales, notas y datos, cifrados de extremo a extremo.",
-    "copyright": "Copyright © 2026 Cypher · Desarrollado por",
-    "columns": {
-      "platform": {
-        "title": "Plataforma",
-        "home": "Inicio",
-        "functions": "Funciones",
-        "security": "Seguridad"
+    "features": {
+      "tagline": "Simplifica tu seguridad digital",
+      "title": "Gestiona tus contraseñas fácilmente,",
+      "titleHighlight": "sin complicaciones ni riesgos",
+      "automation": {
+        "title": "Descubra el poder de la automatización",
+        "description": "Cree, guarde y rellene las contraseñas automáticamente, y dedique su atención a lo que realmente importa."
       },
-      "help": {
-        "title": "Ayuda",
-        "howItWorks": "Cómo funciona",
-        "about": "Sobre el proyecto",
-        "contact": "Contacto"
+      "sharing": {
+        "title": "Comparta más fácilmente",
+        "description": "Con un clic puede compartir contraseñas con compañeros de trabajo o familiares. Nunca había sido tan fácil colaborar o dar acceso."
       },
-      "legal": {
-        "title": "Legal",
-        "terms": "Términos de uso",
-        "privacy": "Política de privacidad",
-        "cookies": "Política de cookies"
+      "strong": {
+        "title": "Evite contraseñas débiles",
+        "description": "Nuestro gestor genera contraseñas seguras para todas sus cuentas y las guarda para que no tenga que memorizarlas."
+      },
+      "access": {
+        "title": "Accede desde cualquier lugar",
+        "description": "Consulte sus contraseñas desde cualquier sitio y en cualquier dispositivo para entrar en sus cuentas siempre que lo necesite."
+      }
+    },
+    "whoWeAre": {
+      "tagline": "Quiénes somos",
+      "title": "Protegiendo",
+      "titleHighlight": "tu seguridad digital",
+      "titleEnd": "con dedicación, tecnología y confianza",
+      "description": "Somos un equipo comprometido con la ciberseguridad, ofreciendo soluciones innovadoras para proteger información valiosa. Nuestra misión es garantizar la tranquilidad digital de usuarios y empresas con tecnología avanzada y eficiente.",
+      "stats": {
+        "positiveReviews": "Reseñas positivas",
+        "protectedUsers": "Usuarios protegidos",
+        "affiliatedCompanies": "Empresas afiliadas"
+      }
+    }
+  },
+  "shared": {
+    "nav": {
+      "home": "Inicio",
+      "functions": "Funciones",
+      "security": "Seguridad",
+      "howItWorks": "Cómo funciona",
+      "login": "Acceder",
+      "aria": {
+        "mainNav": "Navegación principal",
+        "mobileMenu": "Menú mobile",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú",
+        "toggleTheme": "Cambiar tema",
+        "toggleLang": "Cambiar idioma",
+        "login": "Acceder a tu cuenta"
+      }
+    },
+    "footer": {
+      "description": "Sistema integral de gestión de activos digitales y seguridad personal. Tus credenciales, notas y datos, cifrados de extremo a extremo.",
+      "copyright": "Copyright © 2026 Cypher · Desarrollado por",
+      "columns": {
+        "platform": {
+          "title": "Plataforma",
+          "home": "Inicio",
+          "functions": "Funciones",
+          "security": "Seguridad"
+        },
+        "help": {
+          "title": "Ayuda",
+          "howItWorks": "Cómo funciona",
+          "about": "Sobre el proyecto",
+          "contact": "Contacto"
+        },
+        "legal": {
+          "title": "Legal",
+          "terms": "Términos de uso",
+          "privacy": "Política de privacidad",
+          "cookies": "Política de cookies"
+        }
       }
     }
   }

@@ -1,83 +1,87 @@
 {
-  "nav": {
-    "home": "Home",
-    "functions": "Features",
-    "security": "Security",
-    "howItWorks": "How it works",
-    "login": "Sign in",
-    "aria": {
-      "mainNav": "Main navigation",
-      "mobileMenu": "Mobile menu",
-      "openMenu": "Open menu",
-      "closeMenu": "Close menu",
-      "toggleTheme": "Toggle theme",
-      "toggleLang": "Switch language",
-      "login": "Access your account"
-    }
-  },
-  "hero": {
-    "tagline": "The most reliable password manager",
-    "title": "The most trusted",
-    "titleHighlight": "password manager",
-    "description": "Cypher is the best free password manager to securely store, manage and share sensitive data online such as passwords, passkeys and credit cards.",
-    "ctaPrimary": "Start today",
-    "ctaSecondary": "Contact us",
-    "disclaimer": "* It's free and requires no installation."
-  },
-  "features": {
-    "tagline": "Simplify your digital security",
-    "title": "Manage your passwords easily,",
-    "titleHighlight": "without complications or risks",
-    "automation": {
-      "title": "Discover the power of automation",
-      "description": "Automatically create, save, and autofill passwords, so you can focus on what really matters."
+  "home": {
+    "hero": {
+      "tagline": "The most reliable password manager",
+      "title": "The most trusted",
+      "titleHighlight": "password manager",
+      "description": "Cypher is the best free password manager to securely store, manage and share sensitive data online such as passwords, passkeys and credit cards.",
+      "ctaPrimary": "Start today",
+      "ctaSecondary": "Contact us",
+      "disclaimer": "* It's free and requires no installation."
     },
-    "sharing": {
-      "title": "Easier sharing",
-      "description": "Share passwords with coworkers or family with just one click. Collaborating or granting access has never been easier."
-    },
-    "strong": {
-      "title": "Avoid weak passwords",
-      "description": "Our manager generates secure passwords for all your accounts and saves them so you don't have to memorize them."
-    },
-    "access": {
-      "title": "Access from anywhere",
-      "description": "Check your passwords from anywhere and on any device to log into your accounts whenever you need to."
-    }
-  },
-  "whoWeAre": {
-    "tagline": "Who we are",
-    "title": "Protecting",
-    "titleHighlight": "your digital security",
-    "titleEnd": "with dedication, technology and trust",
-    "description": "We are a committed team of cybersecurity experts, offering innovative solutions to protect valuable information. Our mission is to ensure digital user and company tranquility with advanced technology and efficiency.",
-    "stats": {
-      "positiveReviews": "Positive reviews",
-      "protectedUsers": "Protected users",
-      "affiliatedCompanies": "Affiliated companies"
-    }
-  },
-  "footer": {
-    "description": "Comprehensive digital asset management and personal security system. Your credentials, notes and data, end-to-end encrypted.",
-    "copyright": "Copyright © 2026 Cypher · Developed by",
-    "columns": {
-      "platform": {
-        "title": "Platform",
-        "home": "Home",
-        "functions": "Features",
-        "security": "Security"
+    "features": {
+      "tagline": "Simplify your digital security",
+      "title": "Manage your passwords easily,",
+      "titleHighlight": "without complications or risks",
+      "automation": {
+        "title": "Discover the power of automation",
+        "description": "Automatically create, save, and autofill passwords, so you can focus on what really matters."
       },
-      "help": {
-        "title": "Help",
-        "howItWorks": "How it works",
-        "about": "About",
-        "contact": "Contact"
+      "sharing": {
+        "title": "Easier sharing",
+        "description": "Share passwords with coworkers or family with just one click. Collaborating or granting access has never been easier."
       },
-      "legal": {
-        "title": "Legal",
-        "terms": "Terms of use",
-        "privacy": "Privacy policy",
-        "cookies": "Cookie policy"
+      "strong": {
+        "title": "Avoid weak passwords",
+        "description": "Our manager generates secure passwords for all your accounts and saves them so you don't have to memorize them."
+      },
+      "access": {
+        "title": "Access from anywhere",
+        "description": "Check your passwords from anywhere and on any device to log into your accounts whenever you need to."
+      }
+    },
+    "whoWeAre": {
+      "tagline": "Who we are",
+      "title": "Protecting",
+      "titleHighlight": "your digital security",
+      "titleEnd": "with dedication, technology and trust",
+      "description": "We are a committed team of cybersecurity experts, offering innovative solutions to protect valuable information. Our mission is to ensure digital user and company tranquility with advanced technology and efficiency.",
+      "stats": {
+        "positiveReviews": "Positive reviews",
+        "protectedUsers": "Protected users",
+        "affiliatedCompanies": "Affiliated companies"
+      }
+    }
+  },
+  "shared": {
+    "nav": {
+      "home": "Home",
+      "functions": "Features",
+      "security": "Security",
+      "howItWorks": "How it works",
+      "login": "Sign in",
+      "aria": {
+        "mainNav": "Main navigation",
+        "mobileMenu": "Mobile menu",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "toggleTheme": "Toggle theme",
+        "toggleLang": "Switch language",
+        "login": "Access your account"
+      }
+    },
+    "footer": {
+      "description": "Comprehensive digital asset management and personal security system. Your credentials, notes and data, end-to-end encrypted.",
+      "copyright": "Copyright © 2026 Cypher · Developed by",
+      "columns": {
+        "platform": {
+          "title": "Platform",
+          "home": "Home",
+          "functions": "Features",
+          "security": "Security"
+        },
+        "help": {
+          "title": "Help",
+          "howItWorks": "How it works",
+          "about": "About",
+          "contact": "Contact"
+        },
+        "legal": {
+          "title": "Legal",
+          "terms": "Terms of use",
+          "privacy": "Privacy policy",
+          "cookies": "Cookie policy"
+        }
       }
     }
   }
