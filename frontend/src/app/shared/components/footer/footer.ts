@@ -40,27 +40,27 @@ export class Footer {
 
   readonly columns: FooterColumn[] = [
     {
-      titleKey: 'footer.columns.platform.title',
+      titleKey: 'shared.footer.columns.platform.title',
       links: [
-        { labelKey: 'footer.columns.platform.home', route: '/' },
-        { labelKey: 'footer.columns.platform.functions', route: '/functions' },
-        { labelKey: 'footer.columns.platform.security', route: '/security' },
+        { labelKey: 'shared.footer.columns.platform.home', route: '/' },
+        { labelKey: 'shared.footer.columns.platform.functions', route: '/functions' },
+        { labelKey: 'shared.footer.columns.platform.security', route: '/security' },
       ],
     },
     {
-      titleKey: 'footer.columns.help.title',
+      titleKey: 'shared.footer.columns.help.title',
       links: [
-        { labelKey: 'footer.columns.help.howItWorks', route: '/how-it-works' },
-        { labelKey: 'footer.columns.help.about', route: '/about' },
-        { labelKey: 'footer.columns.help.contact', route: '/contact' },
+        { labelKey: 'shared.footer.columns.help.howItWorks', route: '/how-it-works' },
+        { labelKey: 'shared.footer.columns.help.about', route: '/about' },
+        { labelKey: 'shared.footer.columns.help.contact', route: '/contact' },
       ],
     },
     {
-      titleKey: 'footer.columns.legal.title',
+      titleKey: 'shared.footer.columns.legal.title',
       links: [
-        { labelKey: 'footer.columns.legal.terms', route: '/legal/terms' },
-        { labelKey: 'footer.columns.legal.privacy', route: '/legal/privacy' },
-        { labelKey: 'footer.columns.legal.cookies', route: '/legal/cookies' },
+        { labelKey: 'shared.footer.columns.legal.terms', route: '/legal/terms' },
+        { labelKey: 'shared.footer.columns.legal.privacy', route: '/legal/privacy' },
+        { labelKey: 'shared.footer.columns.legal.cookies', route: '/legal/cookies' },
       ],
     },
   ];

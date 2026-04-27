@@ -17,7 +17,7 @@
         </a>
 
         <p class="max-w-88 text-sm leading-relaxed text-gray-400">
-          {{ 'footer.description' | translate }}
+          {{ 'shared.footer.description' | translate }}
         </p>
 
         <ul class="flex gap-4">
@@ -25,7 +25,7 @@
           <li>
             <a
               [href]="social.route"
-              matTooltip="{{ social.labelKey | translate }}"
+              matTooltip="{{ social.labelKey }}"
               class="text-gray-500 hover:text-{{ social.color }} transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -62,7 +62,7 @@
 
     <div class="flex justify-center">
       <p class="text-sm text-gray-400">
-        {{ 'footer.copyright' | translate }}
+        {{ 'shared.footer.copyright' | translate }}
         <a
           href="https://emmanuel-cruz.netlify.app/"
           title="Emmanuel Cruz Portfolio"
