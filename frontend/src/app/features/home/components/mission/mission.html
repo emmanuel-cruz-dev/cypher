@@ -1,1 +1,103 @@
-<p>mission works!</p>
+<section class="relative dark:bg-[#0d1117] py-20 px-6 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <svg
+      class="w-full h-full opacity-10 text-black dark:text-white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line x1="0%" y1="10%" x2="30%" y2="100%" class="stroke-current" stroke-width="0.5" />
+      <line x1="0%" y1="40%" x2="20%" y2="100%" class="stroke-current" stroke-width="0.5" />
+    </svg>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-7 gap-12 lg:gap-20 items-center">
+      <figure
+        ngmMotion
+        [initial]="{ opacity: 0, x: -40 }"
+        [whileInView]="{ opacity: 1, x: 0 }"
+        [viewport]="{ once: true, amount: 0.3 }"
+        [transition]="{ duration: 0.7, delay: 0.2 }"
+        class="lg:col-span-3 flex justify-center lg:justify-start"
+      >
+        <img
+          src="assets/images/home/mission-item.avif"
+          alt="Ilustración de defensa digital"
+          class="w-full h-full max-w-sm lg:max-w-88 object-cover drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
+          width="507"
+          height="596"
+          loading="lazy"
+        />
+      </figure>
+
+      <div class="lg:col-span-4 flex flex-col gap-8 order-1 lg:order-2">
+        <header>
+          <p
+            ngmMotion
+            [initial]="{ opacity: 0, y: -12 }"
+            [whileInView]="{ opacity: 1, y: 0 }"
+            [viewport]="{ once: true, amount: 0.5 }"
+            [transition]="{ duration: 0.6 }"
+            class="text-sm font-semibold tracking-[0.2em] text-gray-400 uppercase mb-4"
+          >
+            {{ 'home.ourMission.tagline' | translate }}
+          </p>
+          <h2
+            ngmMotion
+            [initial]="{ opacity: 0, y: 20 }"
+            [whileInView]="{ opacity: 1, y: 0 }"
+            [viewport]="{ once: true }"
+            [transition]="{ duration: 0.6, delay: 0.1 }"
+            class="text-4xl md:text-5xl font-bold leading-tight"
+          >
+            {{ 'home.ourMission.title' | translate }}
+            <span class="text-violet-500">{{ 'home.ourMission.titleHighlight' | translate }}</span>
+          </h2>
+        </header>
+
+        <p
+          ngmMotion
+          [initial]="{ opacity: 0, y: 16 }"
+          [whileInView]="{ opacity: 1, y: 0 }"
+          [viewport]="{ once: true }"
+          [transition]="{ duration: 0.6, delay: 0.2 }"
+          class="text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl"
+        >
+          {{ 'home.ourMission.description' | translate }}
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+          @for (feature of features; track feature.key; let i = $index) {
+          <div
+            ngmMotion
+            [initial]="{ opacity: 0, y: 20 }"
+            [whileInView]="{ opacity: 1, y: 0 }"
+            [viewport]="{ once: true }"
+            [transition]="{ duration: 0.5, delay: 0.2 + i * 0.1 }"
+            class="flex items-start gap-4 group"
+          >
+            <figure class="shrink-0 w-12 h-auto">
+              <img
+                src="assets/images/home/mission-shield.avif"
+                alt="Ilustración de defensa digital"
+                class="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
+                width="51"
+                height="59"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="flex flex-col gap-1">
+              <h3 class="text-base font-semibold text-gray-900 dark:text-white">
+                {{ 'home.ourMission.features.' + feature.key + '.title' | translate }}
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                {{ 'home.ourMission.features.' + feature.key + '.description' | translate }}
+              </p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
