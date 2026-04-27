@@ -1,5 +1,5 @@
 @if (visible()) {
-<div class="fixed bottom-6 right-6 z-50 w-12 h-12 flex items-center justify-center">
+<article class="fixed bottom-6 right-6 z-50 w-12 h-12 flex items-center justify-center">
   <svg class="absolute transform -rotate-90 w-full h-full pointer-events-none" viewBox="0 0 48 48">
     <circle
       cx="24"
@@ -22,12 +22,11 @@
       [style.stroke-dashoffset]="dashOffset()"
     />
   </svg>
-
   <button
     (click)="scrollToTop()"
-    class="w-full h-full rounded-full bg-violet-500 hover:bg-violet-600 text-white shadow-lg flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+    class="w-full h-full rounded-full bg-violet-500 hover:bg-violet-600 text-white shadow-lg flex items-center justify-center transition-all duration-300 cursor-pointer"
   >
     <mat-icon style="font-size: 32px; height: 32px; width: 32px">keyboard_arrow_up</mat-icon>
   </button>
-</div>
+</article>
 }
