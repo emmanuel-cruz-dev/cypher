@@ -41,6 +41,30 @@
         "protectedUsers": "Protected users",
         "affiliatedCompanies": "Affiliated companies"
       }
+    },
+    "ourMission": {
+      "tagline": "Our Mission",
+      "title": "Comprehensive security for digital defense",
+      "titleHighlight": "without limits",
+      "description": "We protect your digital environment with effective strategies, providing confidence and peace of mind against any online threat.",
+      "features": {
+        "cyberDefense": {
+          "title": "Cyber Defense",
+          "description": "Advanced protection against digital threats and cyberattacks."
+        },
+        "networkSecurity": {
+          "title": "Network Security",
+          "description": "We protect your connection with secure protocols and strong encryption."
+        },
+        "webProtection": {
+          "title": "Web Protection",
+          "description": "We protect your site from unauthorized access and vulnerabilities."
+        },
+        "accessManagement": {
+          "title": "Access Management",
+          "description": "Secure credential control and storage of sensitive data."
+        }
+      }
     }
   },
   "shared": {
