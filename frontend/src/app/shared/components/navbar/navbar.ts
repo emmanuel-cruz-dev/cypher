@@ -33,10 +33,10 @@ export class Navbar {
   readonly drawerOpen = signal(false);
 
   readonly links: NavLink[] = [
-    { label: 'nav.home', route: '/', icon: 'home' },
-    { label: 'nav.functions', route: '/functions', icon: 'tune' },
-    { label: 'nav.security', route: '/security', icon: 'shield' },
-    { label: 'nav.howItWorks', route: '/how-it-works', icon: 'build' },
+    { label: 'shared.nav.home', route: '/', icon: 'home' },
+    { label: 'shared.nav.functions', route: '/functions', icon: 'tune' },
+    { label: 'shared.nav.security', route: '/security', icon: 'shield' },
+    { label: 'shared.nav.howItWorks', route: '/how-it-works', icon: 'build' },
   ];
 
   toggleDrawer() {
