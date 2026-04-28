@@ -132,6 +132,16 @@
           "cookies": "Cookie policy"
         }
       }
+    },
+    "ctaBanner": {
+      "register": {
+        "headline": "Manage and protect your passwords easily and securely",
+        "buttonLabel": "Get started"
+      },
+      "login": {
+        "headline": "Already have an account? Log in and manage your passwords",
+        "buttonLabel": "Log in"
+      }
     }
   }
 }

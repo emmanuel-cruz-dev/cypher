@@ -132,6 +132,16 @@
           "cookies": "Política de cookies"
         }
       }
+    },
+    "ctaBanner": {
+      "register": {
+        "headline": "Administra y protege tus contraseñas de forma sencilla y segura",
+        "buttonLabel": "Empezar ahora"
+      },
+      "login": {
+        "headline": "¿Ya tenés tu cuenta? Accedé y gestioná tus contraseñas",
+        "buttonLabel": "Iniciar sesión"
+      }
     }
   }
 }
