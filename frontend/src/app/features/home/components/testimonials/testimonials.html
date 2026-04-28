@@ -1,1 +1,36 @@
-<p>testimonials works!</p>
+<section class="relative py-20 px-6 bg-brand-neon">
+  <figure class="absolute top-0 left-0 w-32 lg:w-56 h-auto">
+    <img
+      src="assets/images/home/testimony-quote-open.avif"
+      alt="Comillas de apertura"
+      class="w-full h-full object-cover opacity-90"
+      width="306"
+      height="227"
+      loading="lazy"
+    />
+  </figure>
+  <figure class="absolute bottom-0 right-0 w-32 lg:w-56 h-auto">
+    <img
+      src="assets/images/home/testimony-quote-close.avif"
+      alt="Comillas de cierre"
+      class="w-full h-full object-cover opacity-90"
+      width="306"
+      height="227"
+      loading="lazy"
+    />
+  </figure>
+
+  <div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-10">
+    <p class="text-center text-sm font-semibold tracking-[0.2em] text-gray-700 uppercase">
+      {{ 'home.testimonials.tagline' | translate }}
+    </p>
+
+    <swiper-container #swiperEl init="false" class="w-full" navigation="true">
+      @for (t of testimonials; track t.key) {
+      <swiper-slide>
+        <app-testimonial-card [t]="t" />
+      </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</section>
