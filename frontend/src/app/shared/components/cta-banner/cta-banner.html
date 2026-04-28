@@ -1,1 +1,35 @@
-<p>cta-banner works!</p>
+<section class="relative dark:bg-[#0d1117] p-6 px-4 md:p-8 md:px-10 lg:p-16">
+  <article
+    ngmMotion
+    [initial]="{ opacity: 0, y: 20 }"
+    [whileInView]="{ opacity: 1, y: 0 }"
+    [viewport]="{ once: true }"
+    [transition]="{ duration: 0.6, delay: 0.2 }"
+    class="relative py-16 px-4 sm:px-6 bg-linear-to-r from-purple-500 to-violet-500 rounded-2xl overflow-hidden shadow-xl"
+  >
+    <figure class="absolute inset-0">
+      <img
+        src="assets/images/home/background-dots.avif"
+        alt="Fondo de sección con puntos"
+        class="w-full h-full object-cover"
+        width="1000"
+        height="292"
+        loading="lazy"
+      />
+    </figure>
+
+    <div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-8 text-center">
+      <h2
+        class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight text-shadow-lg"
+      >
+        {{ 'shared.ctaBanner.' + variant + '.headline' | translate }}
+      </h2>
+      <a
+        [routerLink]="config.buttonRoute"
+        class="inline-block bg-brand-neon hover:bg-[#d4ff00] text-gray-900 shadow-2xl font-bold text-base px-8 py-3 rounded-lg transition-colors duration-200"
+      >
+        {{ 'shared.ctaBanner.' + variant + '.buttonLabel' | translate }}
+      </a>
+    </div>
+  </article>
+</section>
