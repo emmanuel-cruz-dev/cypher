@@ -1,0 +1,15 @@
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+  width: 28px;
+  height: 28px;
+  color: #9ca3af;
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+swiper-container::part(button-prev):hover,
+swiper-container::part(button-next):hover {
+  color: #a78bfa;
+  border-color: rgba(167, 139, 250, 0.4);
+  transform: scale(1.05);
+}
