@@ -65,6 +65,31 @@
           "description": "Secure credential control and storage of sensitive data."
         }
       }
+    },
+    "testimonials": {
+      "tagline": "Confidence built from real security",
+      "items": {
+        "laura": {
+          "role": "CTO in Fintech",
+          "quote": "Cypher allowed us to centralize critical credentials without compromising security. The encryption-based architecture gave us a layer of trust we didn't have before."
+        },
+        "carlos": {
+          "role": "IT Director",
+          "quote": "Access management is no longer a problem. With Cypher, we have complete control over sensitive credentials and a much more agile user experience for the team."
+        },
+        "ana": {
+          "role": "Security Specialist",
+          "quote": "What I value most is the focus on privacy. Knowing that data is encrypted and protected even within the system makes a huge difference."
+        },
+        "carla": {
+          "role": "Infrastructure Manager",
+          "quote": "Since implementing Cypher, we have significantly improved our security practices. Organization and quick access to critical information are key in our daily operations."
+        },
+        "miguel": {
+          "role": "Cybersecurity Analyst",
+          "quote": "The password generator and security alerts make maintaining good practices much simpler. It's a tool designed for real-world use."
+        }
+      }
     }
   },
   "shared": {
