@@ -1,1 +1,28 @@
-<p>testimonial-card works!</p>
+<article class="flex flex-col items-center gap-6 text-center pb-10">
+  <div class="flex gap-1.5" [attr.aria-label]="t.rating + ' estrellas de 5'">
+    @for (star of starsArray(t.rating); track $index) {
+    <mat-icon fontIcon="star" class="text-violet-500!"></mat-icon>
+    }
+  </div>
+
+  <blockquote class="text-lg md:text-xl font-semibold leading-relaxed text-gray-900 max-w-2xl">
+    "{{ 'home.testimonials.items.' + t.key + '.quote' | translate }}"
+  </blockquote>
+
+  <div class="flex flex-col items-center gap-3">
+    <img
+      [src]="t.avatar"
+      [alt]="t.name"
+      class="w-16 h-16 rounded-full object-cover shadow-lg"
+      loading="lazy"
+      width="300"
+      height="300"
+    />
+    <div class="flex flex-col gap-0.5">
+      <p class="text-lg font-bold text-gray-900">{{ t.name }}</p>
+      <span class="text-sm text-gray-700">
+        {{ 'home.testimonials.items.' + t.key + '.role' | translate }}
+      </span>
+    </div>
+  </div>
+</article>
