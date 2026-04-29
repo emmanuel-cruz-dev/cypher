@@ -1,1 +1,121 @@
-<p>about-us works!</p>
+<section class="relative dark:bg-[#0d1117] pt-10 px-6">
+  <div class="relative z-10 max-w-6xl mx-auto py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div
+        ngmMotion
+        [initial]="{ opacity: 0, x: -40 }"
+        [whileInView]="{ opacity: 1, x: 0 }"
+        [viewport]="{ once: true, amount: 0.3 }"
+        [transition]="{ duration: 0.7, delay: 0.1 }"
+        class="grid grid-cols-2 gap-6"
+      >
+        <figure
+          class="hidden lg:block col-span-2 rounded-2xl overflow-hidden h-64 lg:h-72 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
+        >
+          <img
+            src="assets/images/about/about-page-img1.webp"
+            alt="Equipo de seguridad trabajando"
+            class="w-full h-full object-cover"
+            width="540"
+            height="335"
+            loading="lazy"
+          />
+        </figure>
+        <figure
+          class="rounded-2xl overflow-hidden h-64 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
+        >
+          <img
+            src="assets/images/about/about-page-img2.webp"
+            alt="Profesional de seguridad"
+            class="w-full h-full object-cover"
+            width="255"
+            height="251"
+            loading="lazy"
+          />
+        </figure>
+        <figure
+          class="rounded-2xl overflow-hidden h-64 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_10px_20px_rgba(255,255,255,0.3)]"
+        >
+          <img
+            src="assets/images/about/about-page-img3.webp"
+            alt="Analista de ciberseguridad"
+            class="w-full h-full object-cover"
+            width="255"
+            height="251"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <header>
+          <p
+            ngmMotion
+            [initial]="{ opacity: 0, y: -12 }"
+            [whileInView]="{ opacity: 1, y: 0 }"
+            [viewport]="{ once: true, amount: 0.5 }"
+            [transition]="{ duration: 0.6 }"
+            class="text-sm font-semibold tracking-[0.2em] text-gray-400 uppercase mb-4"
+          >
+            {{ 'about.aboutUs.tagline' | translate }}
+          </p>
+          <h2
+            ngmMotion
+            [initial]="{ opacity: 0, y: 20 }"
+            [whileInView]="{ opacity: 1, y: 0 }"
+            [viewport]="{ once: true }"
+            [transition]="{ duration: 0.6, delay: 0.1 }"
+            class="text-4xl md:text-5xl font-bold leading-tight"
+          >
+            {{ 'about.aboutUs.headline' | translate }}
+          </h2>
+        </header>
+
+        <p
+          ngmMotion
+          [initial]="{ opacity: 0, y: 16 }"
+          [whileInView]="{ opacity: 1, y: 0 }"
+          [viewport]="{ once: true }"
+          [transition]="{ duration: 0.6, delay: 0.2 }"
+          class="text-base text-gray-500 dark:text-gray-400 leading-relaxed"
+        >
+          {{ 'about.aboutUs.description1' | translate }}
+        </p>
+
+        <p
+          ngmMotion
+          [initial]="{ opacity: 0, y: 16 }"
+          [whileInView]="{ opacity: 1, y: 0 }"
+          [viewport]="{ once: true }"
+          [transition]="{ duration: 0.6, delay: 0.25 }"
+          class="text-base text-gray-700 dark:text-gray-400 leading-relaxed"
+        >
+          {{ 'about.aboutUs.description2' | translate }}
+        </p>
+
+        <ul
+          ngmMotion
+          [initial]="{ opacity: 0, y: 16 }"
+          [whileInView]="{ opacity: 1, y: 0 }"
+          [viewport]="{ once: true }"
+          [transition]="{ duration: 0.6, delay: 0.35 }"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 pt-2"
+        >
+          @for (feature of features; track feature) {
+          <li class="flex items-center gap-3">
+            <span
+              class="shrink-0 w-6 h-6 rounded-full bg-brand-neon flex items-center justify-center drop-shadow-[0_5px_5px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_5px_5px_rgba(255,255,255,0.3)]"
+              aria-hidden="true"
+            >
+              <mat-icon class="text-black! scale-75" fontIcon="check-circle"></mat-icon>
+            </span>
+            <span class="text-sm text-gray-600 dark:text-gray-300">
+              {{ 'about.aboutUs.features.' + feature | translate }}
+            </span>
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
