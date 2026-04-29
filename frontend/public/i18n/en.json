@@ -94,19 +94,18 @@
   },
   "about": {
     "aboutUs": {
-      "title": "About Cypher",
-      "headline": "Secure and full-control over your digital assets",
-      "description": "Cypher is a platform designed to centralize and protect sensitive digital assets under a modern security approach. Our mission is to offer an experience where privacy, data integrity, and simplicity coexist.\n\nThrough a system based on encryption and good security practices, Cypher allows you to manage credentials, private notes, and addresses from a single place, reducing risk and improving digital organization.",
-      "features": [
-        "Centralized credential and sensitive data management",
-        "Data-in-transit encryption (AES-256)",
-        "Inspired by Zero-Knowledge architecture",
-        "Secure password generator",
-        "Labels and categorization system",
-        "Security audit and expiration alerts",
-        "Secure authentication via JWT",
-        "Modern, fast, and responsive interface"
-      ]
+      "tagline": "About us",
+      "headline": "Secure and full-control over your assets",
+      "description1": "The platform is designed to centralize and protect sensitive digital assets under a modern security approach. Our mission is to offer an experience where privacy, data integrity, and simplicity coexist.",
+      "description2": "Through a system based on encryption and good security practices, Cypher allows you to manage credentials, private notes, and addresses from a single place, reducing risk and improving digital organization.",
+      "features": {
+        "centralizedCredential": "Centralized credential and sensitive data management",
+        "dataInTransit": "Data-in-transit encryption",
+        "passwordGenerator": "Secure password generator",
+        "labelsAndCategories": "Labels and categorization system",
+        "securityAudit": "Security audit and expiration alerts",
+        "secureAuthentication": "Secure authentication"
+      }
     }
   },
   "shared": {

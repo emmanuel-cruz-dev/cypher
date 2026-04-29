@@ -94,19 +94,18 @@
   },
   "about": {
     "aboutUs": {
-      "title": "Sobre Cypher",
-      "headline": "Seguridad y control total sobre tu información digital",
-      "description": "Cypher es una plataforma diseñada para centralizar y proteger activos digitales sensibles bajo un enfoque moderno de seguridad. Nuestra misión es ofrecer una experiencia donde la privacidad, la integridad de los datos y la simplicidad convivan en equilibrio.\n\nA través de un sistema basado en cifrado y buenas prácticas de seguridad, Cypher permite gestionar credenciales, notas privadas y direcciones desde un único lugar, reduciendo la exposición a riesgos y mejorando la organización digital.",
-      "features": [
-        "Gestión centralizada de credenciales y datos sensibles",
-        "Cifrado de datos en reposo (AES-256)",
-        "Arquitectura inspirada en Zero-Knowledge",
-        "Generador de contraseñas seguras",
-        "Sistema de etiquetas y categorización",
-        "Auditoría de seguridad y alertas de expiración",
-        "Acceso seguro mediante autenticación con JWT",
-        "Interfaz moderna, rápida y responsive"
-      ]
+      "tagline": "Sobre nosotros",
+      "headline": "Seguridad y control total sobre tu información",
+      "description1": "La plataforma está diseñada para centralizar y proteger activos digitales sensibles bajo un enfoque moderno de seguridad. Nuestra misión es ofrecer una experiencia donde la privacidad, la integridad de los datos y la simplicidad convivan en equilibrio.",
+      "description2": "A través de un sistema basado en cifrado y buenas prácticas de seguridad, Cypher permite gestionar credenciales, notas privadas y direcciones desde un único lugar, reduciendo la exposición a riesgos y mejorando la organización digital.",
+      "features": {
+        "centralizedCredential": "Gestión centralizada de credenciales y datos sensibles",
+        "dataInTransit": "Cifrado de datos en reposo",
+        "passwordGenerator": "Generador de contraseñas seguras",
+        "labelsAndCategories": "Sistema de etiquetas y categorización",
+        "securityAudit": "Auditoría de seguridad y alertas de expiración",
+        "secureAuthentication": "Acceso seguro mediante autenticación"
+      }
     }
   },
   "shared": {
