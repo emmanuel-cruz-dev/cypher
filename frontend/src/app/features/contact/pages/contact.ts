@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { NgmMotionDirective } from '@scripttype/ng-motion';
 
-import { ContactForm } from '../components/contact-form';
+import { ContactForm } from '../components/contact-form/contact-form';
 
 @Component({
   selector: 'app-contact',
