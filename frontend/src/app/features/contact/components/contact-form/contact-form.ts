@@ -5,14 +5,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { TranslatePipe } from '@ngx-translate/core';
 import { NgmMotionDirective } from '@scripttype/ng-motion';
 import emailjs from '@emailjs/browser';
 
-import { environment } from '../../../../environments/environment';
+import { environment } from '../../../../../environments/environment';
+import { ContactInformation } from '../contact-information/contact-information';
 
 const RATE_LIMIT_KEY = 'contact-form-submissions';
 const MAX_SUBMISSIONS_PER_DAY = 3;
@@ -20,11 +20,6 @@ const MAX_SUBMISSIONS_PER_DAY = 3;
 interface RateLimitData {
   count: number;
   date: string;
-}
-
-interface ContactItem {
-  key: string;
-  icon: string;
 }
 
 @Component({
@@ -35,11 +30,11 @@ interface ContactItem {
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatTooltipModule,
     MatProgressSpinnerModule,
     TextFieldModule,
     TranslatePipe,
     NgmMotionDirective,
+    ContactInformation,
   ],
   templateUrl: './contact-form.html',
 })
@@ -152,37 +147,4 @@ export class ContactForm {
     const control = this.contactForm.get(controlName);
     return (control?.invalid && (control.touched || this.formSubmitted())) || false;
   }
-
-  contactItems: ContactItem[] = [
-    {
-      key: 'email',
-      icon: 'mail',
-    },
-    {
-      key: 'location',
-      icon: 'location_on',
-    },
-    {
-      key: 'responseTime',
-      icon: 'schedule',
-    },
-  ];
-
-  readonly socials = [
-    {
-      labelKey: 'Facebook',
-      route: 'https://www.facebook.com/',
-      icon: 'facebook',
-      color: 'blue-600',
-    },
-    {
-      labelKey: 'Instagram',
-      route: 'https://www.instagram.com/',
-      icon: 'instagram',
-      color: 'pink-600',
-    },
-    { labelKey: 'TikTok', route: 'https://www.tiktok.com/', icon: 'tiktok', color: 'white' },
-    { labelKey: 'X', route: 'https://www.x.com/', icon: 'x', color: 'white' },
-    { labelKey: 'YouTube', route: 'https://www.youtube.com/', icon: 'youtube', color: '[#FF0000]' },
-  ];
 }
