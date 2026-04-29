@@ -108,6 +108,45 @@
       }
     }
   },
+  "contact": {
+    "tagline": "Contact us",
+    "title": "Contact us",
+    "subtitle": "Have any questions or need help? We're here to help.",
+    "info": {
+      "title": "Contact Information",
+      "email": { "label": "Email" },
+      "location": { "label": "Location" },
+      "responseTime": { "label": "Response Time" }
+    },
+    "social": { "title": "Follow us" },
+    "form": {
+      "title": "Send us a message",
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your name",
+        "required": "The name is required"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com",
+        "required": "The email is required",
+        "invalid": "The email is not valid"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What can we help you with?",
+        "required": "The subject is required"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us more about your inquiry...",
+        "required": "The message is required"
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Message sent successfully! We'll get back to you soon."
+    }
+  },
   "shared": {
     "nav": {
       "home": "Home",

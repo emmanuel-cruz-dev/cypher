@@ -108,6 +108,45 @@
       }
     }
   },
+  "contact": {
+    "tagline": "Contacto",
+    "title": "Contáctanos",
+    "subtitle": "¿Tenés alguna pregunta o necesitás ayuda? Estamos para vos.",
+    "info": {
+      "title": "Información de Contacto",
+      "email": { "label": "Email" },
+      "location": { "label": "Ubicación" },
+      "responseTime": { "label": "Tiempo de Respuesta" }
+    },
+    "social": { "title": "Seguinos" },
+    "form": {
+      "title": "Envianos un Mensaje",
+      "name": {
+        "label": "Nombre Completo",
+        "placeholder": "Ingresá tu nombre",
+        "required": "El nombre es requerido"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "tu@email.com",
+        "required": "El email es requerido",
+        "invalid": "El email no es válido"
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "¿En qué podemos ayudarte?",
+        "required": "El asunto es requerido"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Contanos más sobre tu consulta...",
+        "required": "El mensaje es requerido"
+      },
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "successMessage": "¡Mensaje enviado con éxito! Te responderemos pronto."
+    }
+  },
   "shared": {
     "nav": {
       "home": "Inicio",
