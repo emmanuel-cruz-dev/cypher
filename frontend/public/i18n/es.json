@@ -109,14 +109,17 @@
     }
   },
   "contact": {
-    "tagline": "Contacto",
+    "tagline": "Empieza ahora",
     "title": "Contáctanos",
-    "subtitle": "¿Tenés alguna pregunta o necesitás ayuda? Estamos para vos.",
+    "subtitle": "¿Tenés alguna pregunta o necesitás información? Estamos para ayudarte.",
     "info": {
       "title": "Información de Contacto",
-      "email": { "label": "Email" },
-      "location": { "label": "Ubicación" },
-      "responseTime": { "label": "Tiempo de Respuesta" }
+      "email": { "label": "Email", "line": "Podés escribirnos directamente desde el formulario" },
+      "location": {
+        "label": "Ubicación",
+        "line": "Plataforma Global. Disponible en todo el mundo"
+      },
+      "responseTime": { "label": "Tiempo de Respuesta", "line": "Respondemos en menos de 24 hs" }
     },
     "social": { "title": "Seguinos" },
     "form": {

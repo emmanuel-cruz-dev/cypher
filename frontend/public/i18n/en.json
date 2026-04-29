@@ -109,14 +109,14 @@
     }
   },
   "contact": {
-    "tagline": "Contact us",
+    "tagline": "Get started now",
     "title": "Contact us",
     "subtitle": "Have any questions or need help? We're here to help.",
     "info": {
       "title": "Contact Information",
-      "email": { "label": "Email" },
-      "location": { "label": "Location" },
-      "responseTime": { "label": "Response Time" }
+      "email": { "label": "Email", "line": "You can reach us directly from the form" },
+      "location": { "label": "Location", "line": "Global platform. Available worldwide" },
+      "responseTime": { "label": "Response Time", "line": "We'll respond in less than 24 hs" }
     },
     "social": { "title": "Follow us" },
     "form": {
