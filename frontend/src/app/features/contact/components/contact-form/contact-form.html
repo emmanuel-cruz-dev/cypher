@@ -1,99 +1,89 @@
-<div
-  ngmMotion
-  [initial]="{ opacity: 0, y: 30 }"
-  [whileInView]="{ opacity: 1, y: 0 }"
-  [viewport]="{ once: true, amount: 0.2 }"
-  [transition]="{ duration: 0.7, delay: 0.1 }"
-  class="grid grid-cols-1 lg:grid-cols-3 gap-6"
+<article
+  class="rounded-2xl border border-gray-300 dark:border-white/10 bg-white dark:bg-white/5 backdrop-blur-sm p-8"
 >
-  <app-contact-information />
-  <section
-    class="lg:col-span-2 rounded-2xl border border-gray-300 dark:border-white/10 bg-white dark:bg-white/3 backdrop-blur-sm p-8"
-  >
-    <h2 class="text-xl font-bold text-violet-500 mb-6">
-      {{ 'contact.form.title' | translate }}
-    </h2>
+  <h2 class="text-xl font-bold text-violet-500 mb-6">
+    {{ 'contact.form.title' | translate }}
+  </h2>
 
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="flex flex-col gap-5" novalidate>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <mat-form-field appearance="outline" class="w-full">
-          <mat-label>{{ 'contact.form.name.label' | translate }}</mat-label>
-          <input
-            matInput
-            formControlName="name"
-            [placeholder]="'contact.form.name.placeholder' | translate"
-          />
-          @if (isInvalid('name')) {
-          <mat-error>{{ 'contact.form.name.required' | translate }}</mat-error>
-          }
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="w-full">
-          <mat-label>{{ 'contact.form.email.label' | translate }}</mat-label>
-          <input
-            matInput
-            type="email"
-            formControlName="email"
-            [placeholder]="'contact.form.email.placeholder' | translate"
-          />
-          @if (isInvalid('email')) {
-          <mat-error>{{ 'contact.form.email.required' | translate }}</mat-error>
-          }
-        </mat-form-field>
-      </div>
-
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="flex flex-col gap-5" novalidate>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
       <mat-form-field appearance="outline" class="w-full">
-        <mat-label>{{ 'contact.form.subject.label' | translate }}</mat-label>
+        <mat-label>{{ 'contact.form.name.label' | translate }}</mat-label>
         <input
           matInput
-          formControlName="subject"
-          [placeholder]="'contact.form.subject.placeholder' | translate"
+          formControlName="name"
+          [placeholder]="'contact.form.name.placeholder' | translate"
         />
-        @if (isInvalid('subject')) {
-        <mat-error>{{ 'contact.form.subject.required' | translate }}</mat-error>
+        @if (isInvalid('name')) {
+        <mat-error>{{ 'contact.form.name.required' | translate }}</mat-error>
         }
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="w-full">
-        <mat-label>{{ 'contact.form.message.label' | translate }}</mat-label>
-        <textarea
+        <mat-label>{{ 'contact.form.email.label' | translate }}</mat-label>
+        <input
           matInput
-          formControlName="message"
-          [placeholder]="'contact.form.message.placeholder' | translate"
-          rows="5"
-          cdkTextareaAutosize
-          cdkAutosizeMinRows="5"
-          cdkAutosizeMaxRows="10"
-        ></textarea>
-        @if (isInvalid('message')) {
-        <mat-error>{{ 'contact.form.message.required' | translate }}</mat-error>
+          type="email"
+          formControlName="email"
+          [placeholder]="'contact.form.email.placeholder' | translate"
+        />
+        @if (isInvalid('email')) {
+        <mat-error>{{ 'contact.form.email.required' | translate }}</mat-error>
         }
       </mat-form-field>
+    </div>
 
-      <footer class="flex flex-col gap-2">
-        @if (remainingSubmissions <= 1 && remainingSubmissions > 0) {
-        <p class="text-xs text-amber-400 text-right">
-          Te queda {{ remainingSubmissions }} envío por hoy.
-        </p>
-        } @if (isRateLimited) {
-        <p class="text-xs text-red-400 text-right">Límite diario alcanzado. Volvé mañana.</p>
-        }
-        <div class="flex justify-end pt-2">
-          <button
-            mat-flat-button
-            type="submit"
-            [disabled]="isLoading() || isRateLimited"
-            class="bg-violet-600! hover:bg-violet-500! text-white! rounded-xl! px-8! py-3! text-sm! font-semibold! transition-all duration-200 disabled:opacity-50! disabled:cursor-not-allowed! flex items-center gap-2"
-          >
-            @if (isLoading()) {
-            <mat-spinner diameter="16" class="text-white!" />
-            } @else {
-            <mat-icon class="text-[18px]!" fontIcon="send"></mat-icon>
-            }
-            {{ (isLoading() ? 'contact.form.sending' : 'contact.form.submit') | translate }}
-          </button>
-        </div>
-      </footer>
-    </form>
-  </section>
-</div>
+    <mat-form-field appearance="outline" class="w-full">
+      <mat-label>{{ 'contact.form.subject.label' | translate }}</mat-label>
+      <input
+        matInput
+        formControlName="subject"
+        [placeholder]="'contact.form.subject.placeholder' | translate"
+      />
+      @if (isInvalid('subject')) {
+      <mat-error>{{ 'contact.form.subject.required' | translate }}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="w-full">
+      <mat-label>{{ 'contact.form.message.label' | translate }}</mat-label>
+      <textarea
+        matInput
+        formControlName="message"
+        [placeholder]="'contact.form.message.placeholder' | translate"
+        rows="5"
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="5"
+        cdkAutosizeMaxRows="10"
+      ></textarea>
+      @if (isInvalid('message')) {
+      <mat-error>{{ 'contact.form.message.required' | translate }}</mat-error>
+      }
+    </mat-form-field>
+
+    <footer class="flex flex-col gap-2">
+      @if (remainingSubmissions <= 1 && remainingSubmissions > 0) {
+      <p class="text-xs text-amber-400 text-right">
+        Te queda {{ remainingSubmissions }} envío por hoy.
+      </p>
+      } @if (isRateLimited) {
+      <p class="text-xs text-red-400 text-right">Límite diario alcanzado. Volvé mañana.</p>
+      }
+      <div class="flex justify-end pt-2">
+        <button
+          mat-flat-button
+          type="submit"
+          [disabled]="isLoading() || isRateLimited"
+          class="text-gray-900! bg-brand-neon! hover:bg-black! hover:text-white! rounded-lg! px-8! py-3! text-sm! font-bold! transition-colors! duration-300! disabled:opacity-50! disabled:cursor-not-allowed! flex items-center gap-2"
+        >
+          @if (isLoading()) {
+          <mat-spinner diameter="16" class="text-white!" />
+          } @else {
+          <mat-icon class="text-[18px]!" fontIcon="send"></mat-icon>
+          }
+          {{ (isLoading() ? 'contact.form.sending' : 'contact.form.submit') | translate }}
+        </button>
+      </div>
+    </footer>
+  </form>
+</article>
