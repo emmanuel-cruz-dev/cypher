@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslatePipe } from '@ngx-translate/core';
+
+import { SocialLinksItem } from '../social-links-item/social-links-item';
 
 interface FooterLink {
   labelKey: string;
@@ -16,28 +16,10 @@ interface FooterColumn {
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink, MatIconModule, MatTooltipModule, TranslatePipe],
+  imports: [RouterLink, TranslatePipe, SocialLinksItem],
   templateUrl: './footer.html',
 })
 export class Footer {
-  readonly socials = [
-    {
-      labelKey: 'Facebook',
-      route: 'https://www.facebook.com/',
-      icon: 'facebook',
-      color: 'blue-600',
-    },
-    {
-      labelKey: 'Instagram',
-      route: 'https://www.instagram.com/',
-      icon: 'instagram',
-      color: 'pink-600',
-    },
-    { labelKey: 'TikTok', route: 'https://www.tiktok.com/', icon: 'tiktok', color: 'white' },
-    { labelKey: 'X', route: 'https://www.x.com/', icon: 'x', color: 'white' },
-    { labelKey: 'YouTube', route: 'https://www.youtube.com/', icon: 'youtube', color: '[#FF0000]' },
-  ];
-
   readonly columns: FooterColumn[] = [
     {
       titleKey: 'shared.footer.columns.platform.title',
