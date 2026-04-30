@@ -13,16 +13,31 @@ export class SocialLinksItem {
       labelKey: 'Facebook',
       route: 'https://www.facebook.com/',
       icon: 'facebook',
-      color: 'blue-600',
+      hoverClass: 'hover:text-blue-600 dark:hover:text-blue-600',
     },
     {
       labelKey: 'Instagram',
       route: 'https://www.instagram.com/',
       icon: 'instagram',
-      color: 'pink-600',
+      hoverClass: 'hover:text-pink-600 dark:hover:text-pink-600',
     },
-    { labelKey: 'TikTok', route: 'https://www.tiktok.com/', icon: 'tiktok', color: 'white' },
-    { labelKey: 'X', route: 'https://www.x.com/', icon: 'x', color: 'white' },
-    { labelKey: 'YouTube', route: 'https://www.youtube.com/', icon: 'youtube', color: '[#FF0000]' },
+    {
+      labelKey: 'TikTok',
+      route: 'https://www.tiktok.com/',
+      icon: 'tiktok',
+      hoverClass: 'hover:text-black dark:hover:text-white',
+    },
+    {
+      labelKey: 'X',
+      route: 'https://www.x.com/',
+      icon: 'x',
+      hoverClass: 'hover:text-black dark:hover:text-white',
+    },
+    {
+      labelKey: 'YouTube',
+      route: 'https://www.youtube.com/',
+      icon: 'youtube',
+      hoverClass: 'hover:text-[#FF0000] dark:hover:text-[#FF0000]',
+    },
   ];
 }
