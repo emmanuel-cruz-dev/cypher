@@ -13,9 +13,16 @@
           matInput
           formControlName="name"
           [placeholder]="'contact.form.name.placeholder' | translate"
+          minlength="3"
+          maxlength="50"
+          autocomplete="name"
         />
-        @if (isInvalid('name')) {
+        @if (contactForm.get('name')?.hasError('required')) {
         <mat-error>{{ 'contact.form.name.required' | translate }}</mat-error>
+        } @else if (contactForm.get('name')?.hasError('noNumbers')) {
+        <mat-error>El nombre no puede contener números.</mat-error>
+        } @else if (contactForm.get('name')?.hasError('minlength')) {
+        <mat-error>Mínimo 3 caracteres.</mat-error>
         }
       </mat-form-field>
 
@@ -26,9 +33,14 @@
           type="email"
           formControlName="email"
           [placeholder]="'contact.form.email.placeholder' | translate"
+          minlength="5"
+          maxlength="254"
+          autocomplete="email"
         />
-        @if (isInvalid('email')) {
+        @if (contactForm.get('email')?.hasError('required')) {
         <mat-error>{{ 'contact.form.email.required' | translate }}</mat-error>
+        } @else if (contactForm.get('email')?.hasError('email')) {
+        <mat-error>Ingresá un email válido.</mat-error>
         }
       </mat-form-field>
     </div>
@@ -39,13 +51,19 @@
         matInput
         formControlName="subject"
         [placeholder]="'contact.form.subject.placeholder' | translate"
+        minlength="5"
+        maxlength="50"
       />
-      @if (isInvalid('subject')) {
+      @if (contactForm.get('subject')?.hasError('required')) {
       <mat-error>{{ 'contact.form.subject.required' | translate }}</mat-error>
+      } @else if (contactForm.get('subject')?.hasError('noOnlyNumbers')) {
+      <mat-error>El asunto no puede ser solo números.</mat-error>
+      } @else if (contactForm.get('subject')?.hasError('minlength')) {
+      <mat-error>Mínimo 5 caracteres.</mat-error>
       }
     </mat-form-field>
 
-    <mat-form-field appearance="outline" class="w-full">
+    <mat-form-field appearance="outline" class="w-full" subscriptSizing="dynamic">
       <mat-label>{{ 'contact.form.message.label' | translate }}</mat-label>
       <textarea
         matInput
@@ -55,10 +73,20 @@
         cdkTextareaAutosize
         cdkAutosizeMinRows="5"
         cdkAutosizeMaxRows="10"
+        maxlength="300"
       ></textarea>
-      @if (isInvalid('message')) {
+      @if (contactForm.get('message')?.hasError('required')) {
       <mat-error>{{ 'contact.form.message.required' | translate }}</mat-error>
+      } @else if (contactForm.get('message')?.hasError('minlength')) {
+      <mat-error>Mínimo 10 caracteres.</mat-error>
       }
+      <mat-hint
+        align="end"
+        [class.text-amber-400]="messageCharsRemaining <= 30"
+        [class.text-red-400]="messageCharsRemaining <= 10"
+      >
+        {{ messageCharCount }}/{{ maxMessageLength }}
+      </mat-hint>
     </mat-form-field>
 
     <footer class="flex flex-col gap-2">
