@@ -8,11 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { TranslatePipe } from '@ngx-translate/core';
-import { NgmMotionDirective } from '@scripttype/ng-motion';
 import emailjs from '@emailjs/browser';
 
 import { environment } from '../../../../../environments/environment';
-import { ContactInformation } from '../contact-information/contact-information';
 
 const RATE_LIMIT_KEY = 'contact-form-submissions';
 const MAX_SUBMISSIONS_PER_DAY = 3;
@@ -33,8 +31,6 @@ interface RateLimitData {
     MatProgressSpinnerModule,
     TextFieldModule,
     TranslatePipe,
-    NgmMotionDirective,
-    ContactInformation,
   ],
   templateUrl: './contact-form.html',
 })
