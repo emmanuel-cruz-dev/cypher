@@ -1,5 +1,12 @@
 import { Component, inject, signal } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  ReactiveFormsModule,
+  FormBuilder,
+  FormGroup,
+  Validators,
+  AbstractControl,
+  ValidationErrors,
+} from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -14,10 +21,27 @@ import { environment } from '../../../../../environments/environment';
 
 const RATE_LIMIT_KEY = 'contact-form-submissions';
 const MAX_SUBMISSIONS_PER_DAY = 3;
+const MAX_MESSAGE_LENGTH = 300;
 
 interface RateLimitData {
   count: number;
   date: string;
+}
+
+function noOnlyNumbers(control: AbstractControl): ValidationErrors | null {
+  const value = control.value as string;
+  if (value && /^\d+$/.test(value.trim())) {
+    return { noOnlyNumbers: true };
+  }
+  return null;
+}
+
+function noNumbers(control: AbstractControl): ValidationErrors | null {
+  const value = control.value as string;
+  if (value && /\d/.test(value)) {
+    return { noNumbers: true };
+  }
+  return null;
 }
 
 @Component({
@@ -39,17 +63,32 @@ export class ContactForm {
   private snackBar = inject(MatSnackBar);
 
   readonly isLoading = signal(false);
-  private formSubmitted = signal(false);
+  readonly formSubmitted = signal(false);
+  readonly maxMessageLength = MAX_MESSAGE_LENGTH;
 
   contactForm: FormGroup = this.fb.group({
-    name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
+    name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(50), noNumbers]],
     email: [
       '',
       [Validators.required, Validators.email, Validators.minLength(5), Validators.maxLength(254)],
     ],
-    subject: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(50)]],
-    message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(300)]],
+    subject: [
+      '',
+      [Validators.required, Validators.minLength(5), Validators.maxLength(50), noOnlyNumbers],
+    ],
+    message: [
+      '',
+      [Validators.required, Validators.minLength(10), Validators.maxLength(MAX_MESSAGE_LENGTH)],
+    ],
   });
+
+  get messageCharCount(): number {
+    return (this.contactForm.get('message')?.value as string)?.length ?? 0;
+  }
+
+  get messageCharsRemaining(): number {
+    return MAX_MESSAGE_LENGTH - this.messageCharCount;
+  }
 
   private getTodayString(): string {
     return new Date().toISOString().split('T')[0];
@@ -126,8 +165,14 @@ export class ContactForm {
         panelClass: ['snack-success'],
       });
 
-      this.contactForm.reset();
       this.formSubmitted.set(false);
+      this.contactForm.reset();
+
+      Object.values(this.contactForm.controls).forEach((control) => {
+        control.setErrors(null);
+        control.markAsPristine();
+        control.markAsUntouched();
+      });
     } catch (error) {
       console.error('Error al enviar el correo:', error);
       this.snackBar.open('Hubo un problema al enviar el mensaje. Intentá más tarde.', '✕', {
@@ -137,10 +182,5 @@ export class ContactForm {
     } finally {
       this.isLoading.set(false);
     }
-  }
-
-  isInvalid(controlName: string): boolean {
-    const control = this.contactForm.get(controlName);
-    return (control?.invalid && (control.touched || this.formSubmitted())) || false;
   }
 }
