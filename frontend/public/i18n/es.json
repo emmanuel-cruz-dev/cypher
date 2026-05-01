@@ -159,6 +159,15 @@
         "primary": "Empieza ahora",
         "secondary": "Ver más"
       }
+    },
+    "passwordStrengthAnalysis": {
+      "tagline": "Mejora tu seguridad",
+      "title": "¿Qué tan fuerte es tu contraseña?",
+      "description": "Descubre en segundos qué tan segura es tu contraseña y obtén sugerencias para mejorarla.",
+      "cta": {
+        "primary": "Analizar mi contraseña",
+        "secondary": "Ver más"
+      }
     }
   },
   "shared": {

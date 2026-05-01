@@ -156,6 +156,15 @@
         "primary": "Start now",
         "secondary": "See more"
       }
+    },
+    "passwordStrengthAnalysis": {
+      "tagline": "Improve your security",
+      "title": "How strong is your password?",
+      "description": "Discover in seconds what's the strongest password and get suggestions to improve it.",
+      "cta": {
+        "primary": "Analyze my password",
+        "secondary": "See more"
+      }
     }
   },
   "shared": {
