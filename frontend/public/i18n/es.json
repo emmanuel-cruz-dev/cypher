@@ -177,6 +177,15 @@
         "primary": "Generar una frase",
         "secondary": "Ver más"
       }
+    },
+    "usernameGenerator": {
+      "tagline": "Destaca con tu identidad digital",
+      "title": "Crea un nombre de usuario único",
+      "description": "Genera nombres de usuario creativos y seguros para proteger tu identidad en línea.",
+      "cta": {
+        "primary": "Generar un nombre de usuario",
+        "secondary": "Ver más"
+      }
     }
   },
   "shared": {
