@@ -165,6 +165,15 @@
         "primary": "Analyze my password",
         "secondary": "See more"
       }
+    },
+    "passphraseGenerator": {
+      "tagline": "Generate access phrases",
+      "title": "Create memorable access phrases",
+      "description": "Generate easy-to-remember but hard-to-crack access phrases following the best security practices.",
+      "cta": {
+        "primary": "Generate a phrase",
+        "secondary": "See more"
+      }
     }
   },
   "shared": {

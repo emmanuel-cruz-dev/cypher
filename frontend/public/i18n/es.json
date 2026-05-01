@@ -168,6 +168,15 @@
         "primary": "Analizar mi contraseña",
         "secondary": "Ver más"
       }
+    },
+    "passphraseGenerator": {
+      "tagline": "Generar frases de contraseña",
+      "title": "Crea frases de acceso memorables",
+      "description": "Genera frases de acceso fáciles de recordar pero difíciles de hackear, siguiendo las mejores prácticas de seguridad.",
+      "cta": {
+        "primary": "Generar una frase",
+        "secondary": "Ver más"
+      }
     }
   },
   "shared": {
