@@ -6,12 +6,13 @@ import {
   AfterViewInit,
 } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { NgmMotionDirective } from '@scripttype/ng-motion';
 
 import { TestimonialCard, Testimonial } from '../testimonial-card/testimonial-card';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [TranslatePipe, TestimonialCard],
+  imports: [TranslatePipe, NgmMotionDirective, TestimonialCard],
   templateUrl: './testimonials.html',
   styleUrls: ['./testimonials.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
