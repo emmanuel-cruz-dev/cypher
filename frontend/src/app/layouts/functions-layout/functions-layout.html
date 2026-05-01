@@ -1,1 +1,35 @@
-<router-outlet />
+<mat-sidenav-container class="h-full min-h-120 bg-transparent">
+  <mat-sidenav
+    mode="side"
+    opened
+    class="pt-16 w-66! rounded-none! border-r dark:border-slate-800 bg-white dark:bg-slate-800! drop-shadow-sm"
+  >
+    <div class="p-4">
+      <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+        <mat-icon class="text-indigo-600 dark:text-indigo-400" fontIcon="tune"></mat-icon>
+        Funciones
+      </h2>
+    </div>
+
+    <mat-divider class="dark:border-slate-800"></mat-divider>
+
+    <mat-nav-list class="pt-2 px-2! space-y-1">
+      @for (item of routes; track item.route) {
+      <a
+        mat-list-item
+        [routerLink]="item.route"
+        routerLinkActive="bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 font-medium"
+        [routerLinkActiveOptions]="{ exact: item.route === '/functions' }"
+        class="rounded-md! transition-colors hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
+      >
+        <mat-icon matListItemIcon class="mr-3!" fontIcon="{{ item.icon }}"></mat-icon>
+        <span matListItemTitle class="text-sm!">{{ item.label }}</span>
+      </a>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="pt-16">
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>
