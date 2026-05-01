@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { MainLayout } from './layouts/main-layout/main-layout';
 import { EmptyLayout } from './layouts/empty-layout/empty-layout';
+import { FunctionsLayout } from './layouts/functions-layout/functions-layout';
 
 export const routes: Routes = [
   {
@@ -14,6 +15,7 @@ export const routes: Routes = [
       },
       {
         path: 'functions',
+        component: FunctionsLayout,
         loadChildren: () =>
           import('./features/functions/functions.routes').then((m) => m.FUNCTIONS_ROUTES),
       },
