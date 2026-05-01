@@ -147,6 +147,17 @@
       "successMessage": "Message sent successfully! We'll get back to you soon."
     }
   },
+  "functions": {
+    "passwordGenerator": {
+      "tagline": "Best free password generator",
+      "title": "Secure password generator",
+      "description": "Cypher is the best free password manager to securely store, manage and share sensitive data online such as passwords, passkeys and credit cards.",
+      "cta": {
+        "primary": "Start now",
+        "secondary": "See more"
+      }
+    }
+  },
   "shared": {
     "nav": {
       "home": "Home",

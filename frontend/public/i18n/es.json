@@ -150,6 +150,17 @@
       "successMessage": "¡Mensaje enviado con éxito! Te responderemos pronto."
     }
   },
+  "functions": {
+    "passwordGenerator": {
+      "tagline": "El mejor generador de contraseñas gratuito",
+      "title": "Generador de contraseñas seguras",
+      "description": "Cypher es el mejor gestor de contraseñas gratuito para almacenar, administrar y compartir de forma segura datos confidenciales en línea, como contraseñas, claves de acceso y tarjetas de crédito.",
+      "cta": {
+        "primary": "Empieza ahora",
+        "secondary": "Ver más"
+      }
+    }
+  },
   "shared": {
     "nav": {
       "home": "Inicio",
