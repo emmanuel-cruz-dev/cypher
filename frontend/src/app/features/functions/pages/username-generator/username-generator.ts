@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 import { FunctionsHero, FunctionsHeroData } from '../../components/functions-hero/functions-hero';
+import { CtaBanner } from '../../../../shared';
 
 @Component({
   selector: 'app-username-generator',
-  imports: [FunctionsHero],
+  imports: [FunctionsHero, CtaBanner],
   templateUrl: './username-generator.html',
 })
 export class UsernameGenerator {
